@@ -1,0 +1,99 @@
+{
+  "video_id": "vT1e8kEafFw",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 25.0,
+      "text": "And from this phase, you will understand what actually is a data engineer, what work he does, and what happens. So welcome to the next phase where we talk about this book, obviously. About the data warehouse and data lake. Not just about data warehouse and data lake. This chapter briefly touches, doesn't say it exactly, but also touches and talks about the data engineer."
+    },
+    {
+      "start": 25.0,
+      "end": 50.0,
+      "text": "What is the actual role of a data engineer? Because this whole thing that you see around, this is all of a job of a data engineer, which is a very interesting job and it's, I would say, not as friendly as an entry-level job. Many people might get offended, which is fine. What difference does it make to me? But a data engineer has so much responsibility, and it's such a critical job that there"
+    },
+    {
+      "start": 50.0,
+      "end": 75.0,
+      "text": "Freshers are not given that much, it's not like freshers are also hired there. But you will understand this. So here we discuss data warehouse and data lake, these are two terms. And again both of these terms are used in the perspective of how to store data or where to keep data. So first of all, what you will see here, let's zoom in a little. That in the olden days"
+    },
+    {
+      "start": 75.0,
+      "end": 100.0,
+      "text": "People used to keep everything in one database. Transactions and reports too. This is a new phenomenon, I think, within the last 5-8 years when we categorized OLAP and OLTP separately because we have specialized databases for that. It didn't used to be like that before, the same database was used in transactions, the same was used in reports. We used to keep the transaction database active and create a copy of it to work with all the reports. This is how it used to be."
+    },
+    {
+      "start": 100.0,
+      "end": 125.0,
+      "text": "to be. Now what is the problem? The problem is, imagine there is a grocery store where if you go to the counter, the accounting is also being done at the counter and customers are also being served. So obviously, both tasks become slow, neither the accounting happens on time nor the reports are generated, so that's the whole idea. In many places, you must have seen that we are focused on just billing and the management department is not even visible to you, like Reliance"
+    },
+    {
+      "start": 125.0,
+      "end": 150.0,
+      "text": "In stores or DMart etc. But if you go to an old grocery store and reach their month starting or end, they are doing the accounting there, they are giving you stuff too, so it feels odd. So the solution to this problem is data warehouse. So data warehouse is a separate database where only analytics work is done. Now here, a separate database doesn't mean that it is a separate database where data is going, no, this same database is sometimes"
+    },
+    {
+      "start": 150.0,
+      "end": 175.0,
+      "text": "It is copied or, as they say, replicated, and it works fine. So, data is extracted from the operational system, transformed, and then loaded here. Now, these are very interesting words: extract, transform, and load. These, I think, are one of the OG words for data engineering, ETL: extract, transform, and load, which we will see now. So, we call this process ETL, meaning extract, transform, and load."
+    },
+    {
+      "start": 175.0,
+      "end": 200.0,
+      "text": "Think like this, a big company has 50 different systems. For a website, for a store, for an inventory. Pick up data from everywhere, clean it, put it in one place, that's a data warehouse. And if you ask me, a data engineer's job is just this much. That is the whole job. It seems very easy to pick up data, clean it, and put it away."
+    },
+    {
+      "start": 200.0,
+      "end": 225.0,
+      "text": "But it is such a scary job. So business analysts here run queries, this processed cleaned up data, in that analysts keep running their operational system queries etc. Now here, this flow of ETL, it is very important to understand. Extract, transform and load that happens. Because a data engineer does this work, now it seems like okay, pick up the data, do a little cleanup etc., remove the null values etc. and store it, whereas that is not the case."
+    },
+    {
+      "start": 225.0,
+      "end": 250.0,
+      "text": "It's such a scary job because data is distributed in many places. Data can be on a website, maybe some tables, some activities, some live graph of a database. It can be in a store, it can be inventory data, it can be CRM data, it can be payment data. Some may be coming from SQL database, some from NoSQL database, some may be inside JSON, some inside CSV. Some PDF"
+    },
+    {
+      "start": 250.0,
+      "end": 275.0,
+      "text": "inside. There is a whole lot of type of data. If you think about it once, an insane amount of data types are available to you. Handling all these data types and extracting only data from them, this in itself is data engineering. In fact, if you see, the OCR techniques that are there now, in case you don't know, OCR techniques are there to read PDFs, that is also still evolving, every day some repository comes that I am better, I"
+    },
+    {
+      "start": 275.0,
+      "end": 300.0,
+      "text": "I am better. Which is all doing extract job. It is, you have to bring data from many places. It is very very tough. Once data comes from many places, that is raw data even now. Because to clean it, change the format, standardize it. This is also one of the scary jobs. Because the people who are your data analytics people, they directly run queries in the data warehouse. They directly say I need data in SQL format."
+    },
+    {
+      "start": 300.0,
+      "end": 325.0,
+      "text": "do it in all tables and rows. But what came from CSV, maybe I should do it in rows and columns, but what should I do with what came from PDF? What should I do with what came in JSON format? Some came in.txt, some field is missing. So I hope now you get it that this ETL process, extract, transform, and load, why is it so critical that a dedicated engineering role came for it, which is known as data engineer."
+    },
+    {
+      "start": 325.0,
+      "end": 350.0,
+      "text": "And this is their job. So this data warehouse, it's a kind of godown where organized data is kept in rows and columns so that you can easily create reports from it, extract dashboards, extract insights, and all your other tools, I forgot the name of it, Power BI, yes. So Power BI tools, SQL queries, Excel, all of this, they all work on this data warehouse. Now what is the limitation?"
+    },
+    {
+      "start": 350.0,
+      "end": 375.0,
+      "text": "Of the data warehouse. That here, mostly structured data is kept. Meaning rows and columns. So, the data warehouses you will find, you will find them like this. But the data scientists, well, that's the job of data analysts etc. Now, the data scientists, they tell you, we need more data. Data scientists, their hunger never ends to ask for data. Of course, they are data scientists. So, they need text data, images"
+    },
+    {
+      "start": 375.0,
+      "end": 400.0,
+      "text": "also need, videos also need and they need a lot of it and in that format only. So for machine learning, a special format is needed, for Python and R, a different one is needed. So in that case, what do we do? We have brought a new concept which is known as data lake. That here data can also be formatted, here we can also keep images, can also keep videos and whatever else you want to keep it. Here is a very interesting sushi principle."
+    },
+    {
+      "start": 400.0,
+      "end": 425.0,
+      "text": "The principle also comes. So, it's a centralized repository where you keep data structured, unstructured, it's basically like a jungle. Keep whatever you want. So, there is a very interesting sushi principle here that raw data is better. I think all the people in the data science industry, they always prefer to go work on that, that the more data is available in its original form, the better it is for us so that we can transform it according to our needs."
+    },
+    {
+      "start": 425.0,
+      "end": 447.424,
+      "text": "But data warehouse people don't need that raw data, data science people need it. Data scientists, ML engineers, data engineers, researchers, they need such data. So, to fulfill the requirements of both, data lakes and data warehouses were created. So this is what all about the data lake and data warehouse."
+    }
+  ],
+  "transcript": "And from this phase, you will understand what actually is a data engineer, what work he does, and what happens. So welcome to the next phase where we talk about this book, obviously. About the data warehouse and data lake. Not just about data warehouse and data lake. This chapter briefly touches, doesn't say it exactly, but also touches and talks about the data engineer. What is the actual role of a data engineer? Because this whole thing that you see around, this is all of a job of a data engineer, which is a very interesting job and it's, I would say, not as friendly as an entry-level job. Many people might get offended, which is fine. What difference does it make to me? But a data engineer has so much responsibility, and it's such a critical job that there Freshers are not given that much, it's not like freshers are also hired there. But you will understand this. So here we discuss data warehouse and data lake, these are two terms. And again both of these terms are used in the perspective of how to store data or where to keep data. So first of all, what you will see here, let's zoom in a little. That in the olden days People used to keep everything in one database. Transactions and reports too. This is a new phenomenon, I think, within the last 5-8 years when we categorized OLAP and OLTP separately because we have specialized databases for that. It didn't used to be like that before, the same database was used in transactions, the same was used in reports. We used to keep the transaction database active and create a copy of it to work with all the reports. This is how it used to be. to be. Now what is the problem? The problem is, imagine there is a grocery store where if you go to the counter, the accounting is also being done at the counter and customers are also being served. So obviously, both tasks become slow, neither the accounting happens on time nor the reports are generated, so that's the whole idea. In many places, you must have seen that we are focused on just billing and the management department is not even visible to you, like Reliance In stores or DMart etc. But if you go to an old grocery store and reach their month starting or end, they are doing the accounting there, they are giving you stuff too, so it feels odd. So the solution to this problem is data warehouse. So data warehouse is a separate database where only analytics work is done. Now here, a separate database doesn't mean that it is a separate database where data is going, no, this same database is sometimes It is copied or, as they say, replicated, and it works fine. So, data is extracted from the operational system, transformed, and then loaded here. Now, these are very interesting words: extract, transform, and load. These, I think, are one of the OG words for data engineering, ETL: extract, transform, and load, which we will see now. So, we call this process ETL, meaning extract, transform, and load. Think like this, a big company has 50 different systems. For a website, for a store, for an inventory. Pick up data from everywhere, clean it, put it in one place, that's a data warehouse. And if you ask me, a data engineer's job is just this much. That is the whole job. It seems very easy to pick up data, clean it, and put it away. But it is such a scary job. So business analysts here run queries, this processed cleaned up data, in that analysts keep running their operational system queries etc. Now here, this flow of ETL, it is very important to understand. Extract, transform and load that happens. Because a data engineer does this work, now it seems like okay, pick up the data, do a little cleanup etc., remove the null values etc. and store it, whereas that is not the case. It's such a scary job because data is distributed in many places. Data can be on a website, maybe some tables, some activities, some live graph of a database. It can be in a store, it can be inventory data, it can be CRM data, it can be payment data. Some may be coming from SQL database, some from NoSQL database, some may be inside JSON, some inside CSV. Some PDF inside. There is a whole lot of type of data. If you think about it once, an insane amount of data types are available to you. Handling all these data types and extracting only data from them, this in itself is data engineering. In fact, if you see, the OCR techniques that are there now, in case you don't know, OCR techniques are there to read PDFs, that is also still evolving, every day some repository comes that I am better, I I am better. Which is all doing extract job. It is, you have to bring data from many places. It is very very tough. Once data comes from many places, that is raw data even now. Because to clean it, change the format, standardize it. This is also one of the scary jobs. Because the people who are your data analytics people, they directly run queries in the data warehouse. They directly say I need data in SQL format. do it in all tables and rows. But what came from CSV, maybe I should do it in rows and columns, but what should I do with what came from PDF? What should I do with what came in JSON format? Some came in.txt, some field is missing. So I hope now you get it that this ETL process, extract, transform, and load, why is it so critical that a dedicated engineering role came for it, which is known as data engineer. And this is their job. So this data warehouse, it's a kind of godown where organized data is kept in rows and columns so that you can easily create reports from it, extract dashboards, extract insights, and all your other tools, I forgot the name of it, Power BI, yes. So Power BI tools, SQL queries, Excel, all of this, they all work on this data warehouse. Now what is the limitation? Of the data warehouse. That here, mostly structured data is kept. Meaning rows and columns. So, the data warehouses you will find, you will find them like this. But the data scientists, well, that's the job of data analysts etc. Now, the data scientists, they tell you, we need more data. Data scientists, their hunger never ends to ask for data. Of course, they are data scientists. So, they need text data, images also need, videos also need and they need a lot of it and in that format only. So for machine learning, a special format is needed, for Python and R, a different one is needed. So in that case, what do we do? We have brought a new concept which is known as data lake. That here data can also be formatted, here we can also keep images, can also keep videos and whatever else you want to keep it. Here is a very interesting sushi principle. The principle also comes. So, it's a centralized repository where you keep data structured, unstructured, it's basically like a jungle. Keep whatever you want. So, there is a very interesting sushi principle here that raw data is better. I think all the people in the data science industry, they always prefer to go work on that, that the more data is available in its original form, the better it is for us so that we can transform it according to our needs. But data warehouse people don't need that raw data, data science people need it. Data scientists, ML engineers, data engineers, researchers, they need such data. So, to fulfill the requirements of both, data lakes and data warehouses were created. So this is what all about the data lake and data warehouse.",
+  "audio_path": "downloades\\Dataware house and Data Lakes as a concept in System Design.wav_chunk_0.wav",
+  "transcription_seconds": 88.83434860000034,
+  "source_url": "https://youtu.be/vT1e8kEafFw?si=y-A3KdOyEm9uy_GR"
+}

@@ -1,0 +1,694 @@
+{
+  "video_id": "615-yWyS1n0",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.28,
+      "text": "Training a frontier model can cost hundreds of millions of dollars and take months."
+    },
+    {
+      "start": 5.28,
+      "end": 10.08,
+      "text": "But once that model is produced, it's just a huge set of numbers sitting idly in memory."
+    },
+    {
+      "start": 10.08,
+      "end": 13.36,
+      "text": "A model doesn't know how to do anything on its own."
+    },
+    {
+      "start": 13.36,
+      "end": 17.04,
+      "text": "So what's going on behind the scenes to bring that model to life?"
+    },
+    {
+      "start": 17.04,
+      "end": 19.68,
+      "text": "That process is called inference."
+    },
+    {
+      "start": 19.68,
+      "end": 25.84,
+      "text": "An LLM inference is behind most modern chatbots, code assistants, and agent applications today."
+    },
+    {
+      "start": 26.32,
+      "end": 30.32,
+      "text": "Inference happens every single time someone sends a message to the model,"
+    },
+    {
+      "start": 30.32,
+      "end": 33.2,
+      "text": "as opposed to training, which only happens once."
+    },
+    {
+      "start": 33.2,
+      "end": 38.72,
+      "text": "A trained model is a static pile of weights, or specialized numbers,"
+    },
+    {
+      "start": 39.36,
+      "end": 43.28,
+      "text": "that are tuned during the training process to represent information."
+    },
+    {
+      "start": 44.4,
+      "end": 50.72,
+      "text": "Inference is the process of taking that trained model and running it against new input to produce"
+    },
+    {
+      "start": 50.72,
+      "end": 51.84,
+      "text": "some sort of output."
+    },
+    {
+      "start": 52.800000000000004,
+      "end": 57.28,
+      "text": "Inference surprisingly usually costs more over time than training,"
+    },
+    {
+      "start": 57.28,
+      "end": 60.080000000000005,
+      "text": "as it reoccurs with every single request."
+    },
+    {
+      "start": 61.120000000000005,
+      "end": 66.48,
+      "text": "As time goes on, it becomes more and more crucial to serve models as efficiently as possible"
+    },
+    {
+      "start": 66.48,
+      "end": 68.16,
+      "text": "to reduce this cost."
+    },
+    {
+      "start": 68.16,
+      "end": 72.32000000000001,
+      "text": "Today, we'll look at what really happens between prompt and response,"
+    },
+    {
+      "start": 72.32000000000001,
+      "end": 76.48,
+      "text": "and how you can make that serving process as fast and cheap as possible."
+    },
+    {
+      "start": 76.48,
+      "end": 80.32000000000001,
+      "text": "The software that manages inference is called an inference engine,"
+    },
+    {
+      "start": 80.39999999999999,
+      "end": 85.19999999999999,
+      "text": "and its job is to take a pile of weights and turn it into something that can serve requests"
+    },
+    {
+      "start": 85.19999999999999,
+      "end": 87.52,
+      "text": "reliably, quickly, and at scale."
+    },
+    {
+      "start": 88.08,
+      "end": 92.32,
+      "text": "That means scheduling incoming requests, managing GPU resources,"
+    },
+    {
+      "start": 92.32,
+      "end": 94.8,
+      "text": "and deciding how to process work together."
+    },
+    {
+      "start": 94.8,
+      "end": 101.03999999999999,
+      "text": "If you've ever heard of VLLM, OLAMA, or LLAMA-CPP, these are all examples of inference engines."
+    },
+    {
+      "start": 101.03999999999999,
+      "end": 104.32,
+      "text": "Let's take a look at what happens when you send a message to an LLM."
+    },
+    {
+      "start": 105.03999999999999,
+      "end": 109.91999999999999,
+      "text": "Most inference engines expose a standard OpenAI-compatible endpoint,"
+    },
+    {
+      "start": 109.92,
+      "end": 113.60000000000001,
+      "text": "which means you can use the same request format to send your query,"
+    },
+    {
+      "start": 113.60000000000001,
+      "end": 116.24000000000001,
+      "text": "regardless of which model is running under the hood."
+    },
+    {
+      "start": 117.44,
+      "end": 121.44,
+      "text": "This is super helpful when you have an application built to call one model,"
+    },
+    {
+      "start": 122.0,
+      "end": 125.12,
+      "text": "and want to easily swap in another without rewriting any code."
+    },
+    {
+      "start": 126.24000000000001,
+      "end": 130.08,
+      "text": "But before that request even enters the data center,"
+    },
+    {
+      "start": 130.08,
+      "end": 134.16,
+      "text": "we need to translate it into a format that the model can understand."
+    },
+    {
+      "start": 135.36,
+      "end": 138.16,
+      "text": "This process is called tokenization."
+    },
+    {
+      "start": 138.96,
+      "end": 143.28,
+      "text": "Breaking your text into tokens, which might be entire words,"
+    },
+    {
+      "start": 144.0,
+      "end": 147.04,
+      "text": "just a piece of a word, or some punctuation."
+    },
+    {
+      "start": 149.2,
+      "end": 152.07999999999998,
+      "text": "And mapping each one to an arbitrary token ID."
+    },
+    {
+      "start": 152.8,
+      "end": 157.44,
+      "text": "The model never really sees these words, only the stream of IDs."
+    },
+    {
+      "start": 157.44,
+      "end": 159.92,
+      "text": "Though it takes next to no processing power,"
+    },
+    {
+      "start": 159.92,
+      "end": 165.6,
+      "text": "this step defines how much your prompt will cost as its build per token."
+    },
+    {
+      "start": 166.16,
+      "end": 170.0,
+      "text": "Models with larger vocabularies can represent text more efficiently,"
+    },
+    {
+      "start": 170.0,
+      "end": 171.76,
+      "text": "using fewer tokens per prompt."
+    },
+    {
+      "start": 172.16,
+      "end": 176.56,
+      "text": "But a larger vocabulary adds computational overhead in the training process."
+    },
+    {
+      "start": 177.12,
+      "end": 180.32,
+      "text": "Your request needs to be processed on physical hardware."
+    },
+    {
+      "start": 180.32,
+      "end": 183.28,
+      "text": "In most cases, that hardware lives in a data center."
+    },
+    {
+      "start": 183.84,
+      "end": 186.07999999999998,
+      "text": "Once your request arrives at the data center,"
+    },
+    {
+      "start": 186.07999999999998,
+      "end": 189.92,
+      "text": "it will be authenticated via an API key or token."
+    },
+    {
+      "start": 190.72,
+      "end": 194.4,
+      "text": "Something that proves you're allowed to use those GPU resources."
+    },
+    {
+      "start": 194.48000000000002,
+      "end": 197.52,
+      "text": "Next, you'll be routed to specific hardware."
+    },
+    {
+      "start": 198.08,
+      "end": 201.76000000000002,
+      "text": "The inference router looks at your prompt, how long it is,"
+    },
+    {
+      "start": 201.76000000000002,
+      "end": 204.96,
+      "text": "what content it contains, and routes it to available hardware"
+    },
+    {
+      "start": 204.96,
+      "end": 207.84,
+      "text": "that's most optimized for your request at that time."
+    },
+    {
+      "start": 207.84,
+      "end": 211.12,
+      "text": "However, your request isn't the only one coming in."
+    },
+    {
+      "start": 211.6,
+      "end": 215.6,
+      "text": "And sending each request through the model individually"
+    },
+    {
+      "start": 215.6,
+      "end": 219.76,
+      "text": "would be like a bakery using an industrial oven on a single pastry at a time."
+    },
+    {
+      "start": 219.76,
+      "end": 222.32,
+      "text": "It would waste enormous amounts of GPU resources"
+    },
+    {
+      "start": 222.32,
+      "end": 224.32,
+      "text": "and would tank the system's throughput,"
+    },
+    {
+      "start": 224.32,
+      "end": 227.2,
+      "text": "or how many requests a system can carry at once."
+    },
+    {
+      "start": 227.76,
+      "end": 229.92,
+      "text": "Batching groups request together,"
+    },
+    {
+      "start": 229.92,
+      "end": 234.48,
+      "text": "so the GPU processes them as one larger, more efficient unit of work."
+    },
+    {
+      "start": 235.35999999999999,
+      "end": 238.32,
+      "text": "Not all requests take the same amount of time to process,"
+    },
+    {
+      "start": 238.32,
+      "end": 241.28,
+      "text": "so modern engines use continuous batching."
+    },
+    {
+      "start": 241.68,
+      "end": 243.76,
+      "text": "As soon as one request finishes,"
+    },
+    {
+      "start": 243.76,
+      "end": 246.56,
+      "text": "another one will be slotted in to take its place."
+    },
+    {
+      "start": 246.56,
+      "end": 249.51999999999998,
+      "text": "That way, GPUs sit near full utilization"
+    },
+    {
+      "start": 249.92000000000002,
+      "end": 250.72,
+      "text": "at all times."
+    },
+    {
+      "start": 250.72,
+      "end": 253.76000000000002,
+      "text": "A scheduler will handle this batching process"
+    },
+    {
+      "start": 253.76000000000002,
+      "end": 255.92000000000002,
+      "text": "and get your requests routed to the hardware"
+    },
+    {
+      "start": 255.92000000000002,
+      "end": 257.76,
+      "text": "where the real computation is performed"
+    },
+    {
+      "start": 257.76,
+      "end": 259.76,
+      "text": "and your response is generated."
+    },
+    {
+      "start": 259.76,
+      "end": 262.0,
+      "text": "Let's double-click into this last step."
+    },
+    {
+      "start": 262.64,
+      "end": 265.68,
+      "text": "LLM inference contains two distinct phases,"
+    },
+    {
+      "start": 265.68,
+      "end": 270.72,
+      "text": "pre-fill and decode."
+    },
+    {
+      "start": 273.84000000000003,
+      "end": 275.84000000000003,
+      "text": "Once your request reaches the model,"
+    },
+    {
+      "start": 275.84000000000003,
+      "end": 277.84000000000003,
+      "text": "it enters the pre-fill and decode."
+    },
+    {
+      "start": 278.47999999999996,
+      "end": 280.08,
+      "text": "It enters the pre-fill phase."
+    },
+    {
+      "start": 280.79999999999995,
+      "end": 284.23999999999995,
+      "text": "Pre-fill is where the model reads the entire prompt at once"
+    },
+    {
+      "start": 284.23999999999995,
+      "end": 286.4,
+      "text": "and builds an understanding of it,"
+    },
+    {
+      "start": 286.4,
+      "end": 290.4,
+      "text": "laying down what's called the key value, or KVCache."
+    },
+    {
+      "start": 292.56,
+      "end": 295.12,
+      "text": "A running memory of everything it's read so far."
+    },
+    {
+      "start": 295.91999999999996,
+      "end": 298.23999999999995,
+      "text": "Without it, the model would have to reprocess"
+    },
+    {
+      "start": 298.23999999999995,
+      "end": 300.71999999999997,
+      "text": "your entire conversation over again"
+    },
+    {
+      "start": 300.71999999999997,
+      "end": 302.55999999999995,
+      "text": "for each token it wants to output."
+    },
+    {
+      "start": 303.52,
+      "end": 305.28,
+      "text": "It's the reason your conversations"
+    },
+    {
+      "start": 305.28,
+      "end": 307.91999999999996,
+      "text": "don't get exponentially slower as they get longer."
+    },
+    {
+      "start": 308.79999999999995,
+      "end": 310.79999999999995,
+      "text": "This step is compute bound,"
+    },
+    {
+      "start": 311.59999999999997,
+      "end": 314.96,
+      "text": "meaning it takes huge bursts of parallel math"
+    },
+    {
+      "start": 314.96,
+      "end": 318.0,
+      "text": "so its speed is limited by how much raw computation"
+    },
+    {
+      "start": 318.0,
+      "end": 319.67999999999995,
+      "text": "the hardware can support at once."
+    },
+    {
+      "start": 321.11999999999995,
+      "end": 325.91999999999996,
+      "text": "Next, that KVCache is passed over to the decode phase."
+    },
+    {
+      "start": 326.79999999999995,
+      "end": 330.0,
+      "text": "Decode is where the model's response is generated,"
+    },
+    {
+      "start": 330.0,
+      "end": 331.11999999999995,
+      "text": "one token at a time."
+    },
+    {
+      "start": 332.15999999999997,
+      "end": 333.59999999999997,
+      "text": "On each step of decode,"
+    },
+    {
+      "start": 333.6,
+      "end": 335.76000000000005,
+      "text": "the model runs a forward pass"
+    },
+    {
+      "start": 335.76000000000005,
+      "end": 338.24,
+      "text": "and produces a probability distribution"
+    },
+    {
+      "start": 339.68,
+      "end": 342.40000000000003,
+      "text": "over every token in its vocabulary."
+    },
+    {
+      "start": 342.40000000000003,
+      "end": 344.40000000000003,
+      "text": "Essentially, this is a ranked list"
+    },
+    {
+      "start": 344.40000000000003,
+      "end": 346.88,
+      "text": "of what token could potentially come next."
+    },
+    {
+      "start": 347.52000000000004,
+      "end": 350.24,
+      "text": "Once a token gets selected from the distribution,"
+    },
+    {
+      "start": 350.24,
+      "end": 352.48,
+      "text": "it gets appended to the sequence,"
+    },
+    {
+      "start": 352.48,
+      "end": 355.28000000000003,
+      "text": "and the entire process starts over again"
+    },
+    {
+      "start": 355.28000000000003,
+      "end": 357.12,
+      "text": "with each token generated."
+    },
+    {
+      "start": 357.12,
+      "end": 359.52000000000004,
+      "text": "Each token depends on the ones before it,"
+    },
+    {
+      "start": 359.52000000000004,
+      "end": 360.48,
+      "text": "and for each step,"
+    },
+    {
+      "start": 360.48,
+      "end": 362.56,
+      "text": "the model also has to refer back"
+    },
+    {
+      "start": 362.56,
+      "end": 365.52,
+      "text": "to this entire KVCache to remember"
+    },
+    {
+      "start": 365.52,
+      "end": 367.76,
+      "text": "the information it learned in PreFill."
+    },
+    {
+      "start": 367.76,
+      "end": 370.32,
+      "text": "This step is memory bandwidth bound,"
+    },
+    {
+      "start": 371.2,
+      "end": 374.48,
+      "text": "meaning its speed isn't limited by how much math it can do,"
+    },
+    {
+      "start": 374.48,
+      "end": 377.52,
+      "text": "but by how fast data can move out of memory."
+    },
+    {
+      "start": 377.52,
+      "end": 379.36,
+      "text": "PreFill wants raw compute,"
+    },
+    {
+      "start": 379.36,
+      "end": 382.08,
+      "text": "while decode wants fast memory access."
+    },
+    {
+      "start": 382.08,
+      "end": 385.28,
+      "text": "This is also where two common benchmarking numbers come from."
+    },
+    {
+      "start": 386.48,
+      "end": 389.68,
+      "text": "Time to first token, or TTFT,"
+    },
+    {
+      "start": 390.40000000000003,
+      "end": 393.04,
+      "text": "is how long it takes for the first token"
+    },
+    {
+      "start": 393.04,
+      "end": 394.48,
+      "text": "to be received by the user."
+    },
+    {
+      "start": 395.04,
+      "end": 397.6,
+      "text": "This effectively shows you how long"
+    },
+    {
+      "start": 397.6,
+      "end": 399.68,
+      "text": "your PreFill step is taking,"
+    },
+    {
+      "start": 400.56,
+      "end": 404.08,
+      "text": "and intertoken latency, or ITL."
+    },
+    {
+      "start": 405.04,
+      "end": 407.52,
+      "text": "This is the time it takes between tokens"
+    },
+    {
+      "start": 407.52,
+      "end": 408.96000000000004,
+      "text": "to be received by the user."
+    },
+    {
+      "start": 409.6,
+      "end": 412.24,
+      "text": "This essentially shows how long each step"
+    },
+    {
+      "start": 412.24,
+      "end": 414.88,
+      "text": "of your decode phase is taking."
+    },
+    {
+      "start": 416.48,
+      "end": 418.88,
+      "text": "Together, these make up most of what people"
+    },
+    {
+      "start": 418.88,
+      "end": 420.96,
+      "text": "mean by an LLM's latency."
+    },
+    {
+      "start": 421.52,
+      "end": 423.92,
+      "text": "Inference is how a static trained model"
+    },
+    {
+      "start": 423.92,
+      "end": 425.52,
+      "text": "actually generates a response."
+    },
+    {
+      "start": 426.15999999999997,
+      "end": 428.32,
+      "text": "Every request is scheduled into batches"
+    },
+    {
+      "start": 428.32,
+      "end": 431.12,
+      "text": "to keep hardware busy across uneven requests."
+    },
+    {
+      "start": 431.68,
+      "end": 433.76,
+      "text": "Requests are routed to hardware,"
+    },
+    {
+      "start": 434.4,
+      "end": 437.2,
+      "text": "moved through a compute bound PreFill phase,"
+    },
+    {
+      "start": 437.2,
+      "end": 439.84,
+      "text": "and a memory bandwidth bound decode phase."
+    },
+    {
+      "start": 440.4,
+      "end": 442.32,
+      "text": "Put together, this is the machinery"
+    },
+    {
+      "start": 442.32,
+      "end": 444.48,
+      "text": "that sits between a trained model"
+    },
+    {
+      "start": 444.48,
+      "end": 447.12,
+      "text": "and a product people can actually use in real time."
+    },
+    {
+      "start": 447.44,
+      "end": 449.44,
+      "text": "Hit me with any follow-up questions in the comments,"
+    },
+    {
+      "start": 449.44,
+      "end": 451.36,
+      "text": "or let me know which part of your inference stack"
+    },
+    {
+      "start": 451.36,
+      "end": 452.72,
+      "text": "you're already optimizing."
+    }
+  ],
+  "transcript": "Training a frontier model can cost hundreds of millions of dollars and take months. But once that model is produced, it's just a huge set of numbers sitting idly in memory. A model doesn't know how to do anything on its own. So what's going on behind the scenes to bring that model to life? That process is called inference. An LLM inference is behind most modern chatbots, code assistants, and agent applications today. Inference happens every single time someone sends a message to the model, as opposed to training, which only happens once. A trained model is a static pile of weights, or specialized numbers, that are tuned during the training process to represent information. Inference is the process of taking that trained model and running it against new input to produce some sort of output. Inference surprisingly usually costs more over time than training, as it reoccurs with every single request. As time goes on, it becomes more and more crucial to serve models as efficiently as possible to reduce this cost. Today, we'll look at what really happens between prompt and response, and how you can make that serving process as fast and cheap as possible. The software that manages inference is called an inference engine, and its job is to take a pile of weights and turn it into something that can serve requests reliably, quickly, and at scale. That means scheduling incoming requests, managing GPU resources, and deciding how to process work together. If you've ever heard of VLLM, OLAMA, or LLAMA-CPP, these are all examples of inference engines. Let's take a look at what happens when you send a message to an LLM. Most inference engines expose a standard OpenAI-compatible endpoint, which means you can use the same request format to send your query, regardless of which model is running under the hood. This is super helpful when you have an application built to call one model, and want to easily swap in another without rewriting any code. But before that request even enters the data center, we need to translate it into a format that the model can understand. This process is called tokenization. Breaking your text into tokens, which might be entire words, just a piece of a word, or some punctuation. And mapping each one to an arbitrary token ID. The model never really sees these words, only the stream of IDs. Though it takes next to no processing power, this step defines how much your prompt will cost as its build per token. Models with larger vocabularies can represent text more efficiently, using fewer tokens per prompt. But a larger vocabulary adds computational overhead in the training process. Your request needs to be processed on physical hardware. In most cases, that hardware lives in a data center. Once your request arrives at the data center, it will be authenticated via an API key or token. Something that proves you're allowed to use those GPU resources. Next, you'll be routed to specific hardware. The inference router looks at your prompt, how long it is, what content it contains, and routes it to available hardware that's most optimized for your request at that time. However, your request isn't the only one coming in. And sending each request through the model individually would be like a bakery using an industrial oven on a single pastry at a time. It would waste enormous amounts of GPU resources and would tank the system's throughput, or how many requests a system can carry at once. Batching groups request together, so the GPU processes them as one larger, more efficient unit of work. Not all requests take the same amount of time to process, so modern engines use continuous batching. As soon as one request finishes, another one will be slotted in to take its place. That way, GPUs sit near full utilization at all times. A scheduler will handle this batching process and get your requests routed to the hardware where the real computation is performed and your response is generated. Let's double-click into this last step. LLM inference contains two distinct phases, pre-fill and decode. Once your request reaches the model, it enters the pre-fill and decode. It enters the pre-fill phase. Pre-fill is where the model reads the entire prompt at once and builds an understanding of it, laying down what's called the key value, or KVCache. A running memory of everything it's read so far. Without it, the model would have to reprocess your entire conversation over again for each token it wants to output. It's the reason your conversations don't get exponentially slower as they get longer. This step is compute bound, meaning it takes huge bursts of parallel math so its speed is limited by how much raw computation the hardware can support at once. Next, that KVCache is passed over to the decode phase. Decode is where the model's response is generated, one token at a time. On each step of decode, the model runs a forward pass and produces a probability distribution over every token in its vocabulary. Essentially, this is a ranked list of what token could potentially come next. Once a token gets selected from the distribution, it gets appended to the sequence, and the entire process starts over again with each token generated. Each token depends on the ones before it, and for each step, the model also has to refer back to this entire KVCache to remember the information it learned in PreFill. This step is memory bandwidth bound, meaning its speed isn't limited by how much math it can do, but by how fast data can move out of memory. PreFill wants raw compute, while decode wants fast memory access. This is also where two common benchmarking numbers come from. Time to first token, or TTFT, is how long it takes for the first token to be received by the user. This effectively shows you how long your PreFill step is taking, and intertoken latency, or ITL. This is the time it takes between tokens to be received by the user. This essentially shows how long each step of your decode phase is taking. Together, these make up most of what people mean by an LLM's latency. Inference is how a static trained model actually generates a response. Every request is scheduled into batches to keep hardware busy across uneven requests. Requests are routed to hardware, moved through a compute bound PreFill phase, and a memory bandwidth bound decode phase. Put together, this is the machinery that sits between a trained model and a product people can actually use in real time. Hit me with any follow-up questions in the comments, or let me know which part of your inference stack you're already optimizing.",
+  "audio_path": "downloades\\What Is LLM Inference？ How AI Models Generate Responses.wav_chunk_0.wav",
+  "transcription_seconds": 426.0738854000001,
+  "source_url": "https://youtu.be/615-yWyS1n0?si=nCAGO5aDM8hdHgSZ"
+}

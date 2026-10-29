@@ -1,0 +1,92 @@
+[
+  {
+    "question": "How much can it cost to train a frontier model, and how long can it take?",
+    "answer": "Training a frontier model can cost hundreds of millions of dollars and take months.",
+    "start": 0.0,
+    "end": 5.3
+  },
+  {
+    "question": "What is a trained model essentially, once it's produced?",
+    "answer": "A trained model is a static pile of weights, or specialized numbers, sitting idly in memory, and it doesn't know how to do anything on its own.",
+    "start": 5.3,
+    "end": 13.4
+  },
+  {
+    "question": "What is the process called that brings a trained model to life and produces output from new input?",
+    "answer": "That process is called inference, which involves taking a trained model and running it against new input to produce some sort of output.",
+    "start": 17.0,
+    "end": 51.8
+  },
+  {
+    "question": "What are some modern applications that utilize LLM inference?",
+    "answer": "LLM inference is behind most modern chatbots, code assistants, and agent applications today.",
+    "start": 19.7,
+    "end": 25.8
+  },
+  {
+    "question": "How often does inference occur compared to training?",
+    "answer": "Inference happens every single time someone sends a message to the model, as opposed to training, which only happens once.",
+    "start": 26.3,
+    "end": 33.2
+  },
+  {
+    "question": "Why does inference often cost more over time than training?",
+    "answer": "Inference surprisingly usually costs more over time than training, as it reoccurs with every single request.",
+    "start": 52.8,
+    "end": 60.1
+  },
+  {
+    "question": "What is an inference engine, and what is its primary job?",
+    "answer": "An inference engine is the software that manages inference, and its job is to take a pile of weights and turn it into something that can serve requests reliably, quickly, and at scale.",
+    "start": 76.5,
+    "end": 87.5
+  },
+  {
+    "question": "Can you name some examples of inference engines mentioned in the video?",
+    "answer": "VLLM, OLAMA, or LLAMA-CPP are all examples of inference engines.",
+    "start": 94.8,
+    "end": 101.0
+  },
+  {
+    "question": "What is the benefit of inference engines exposing a standard OpenAI-compatible endpoint?",
+    "answer": "It allows users to use the same request format regardless of the underlying model, making it easy to swap models without rewriting any code.",
+    "start": 105.0,
+    "end": 125.1
+  },
+  {
+    "question": "What is tokenization, and what does it involve in the context of LLMs?",
+    "answer": "Tokenization is the process of translating text into a format the model can understand by breaking it into tokens (which might be entire words, pieces of words, or punctuation) and mapping each one to an arbitrary token ID. The model never really sees the words, only the stream of IDs.",
+    "start": 135.4,
+    "end": 157.4
+  },
+  {
+    "question": "How does a model's vocabulary size influence the cost of a prompt?",
+    "answer": "Models with larger vocabularies can represent text more efficiently, using fewer tokens per prompt, which directly impacts the cost as it's billed per token.",
+    "start": 159.9,
+    "end": 171.8
+  },
+  {
+    "question": "Why is batching, specifically continuous batching, important for efficient LLM inference?",
+    "answer": "Batching groups requests together so the GPU processes them as one larger, more efficient unit of work, preventing waste of GPU resources and increasing system throughput. Continuous batching ensures GPUs sit near full utilization by slotting in new requests as others finish.",
+    "start": 227.8,
+    "end": 250.7
+  },
+  {
+    "question": "What are the two distinct phases that LLM inference contains?",
+    "answer": "LLM inference contains two distinct phases: pre-fill and decode.",
+    "start": 262.6,
+    "end": 270.7
+  },
+  {
+    "question": "Describe the pre-fill phase of LLM inference, including its purpose and computational characteristic.",
+    "answer": "During the pre-fill phase, the model reads the entire prompt at once, builds an understanding of it, and lays down the Key Value Cache (KVCache). This step is compute bound, meaning its speed is limited by how much raw computation the hardware can support at once.",
+    "start": 280.8,
+    "end": 319.7
+  },
+  {
+    "question": "What is the decode phase, what limits its speed, and what two common benchmarking numbers are derived from it and the pre-fill phase?",
+    "answer": "The decode phase is where the model's response is generated one token at a time. Its speed is memory bandwidth bound. The two common benchmarking numbers are Time to First Token (TTFT), which reflects the pre-fill step, and Intertoken Latency (ITL), which reflects the decode phase.",
+    "start": 326.8,
+    "end": 414.9
+  }
+]

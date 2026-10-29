@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What are the three main layers of a neural network?",
+    "answer": "There is an input node layer, a hidden layer, and an output layer.",
+    "start": 9.5,
+    "end": 21.0
+  },
+  {
+    "question": "What behavior do neural networks reflect, and what problems do they help solve?",
+    "answer": "Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI and deep learning.",
+    "start": 21.0,
+    "end": 31.5
+  },
+  {
+    "question": "What is the more precise term for the neural networks discussed in the video?",
+    "answer": "The more precise term is an artificial neural network, or ANN, to distinguish it from the very un-artificial neural network that's operating in our heads.",
+    "start": 31.5,
+    "end": 43.5
+  },
+  {
+    "question": "How should one conceptualize each node or artificial neuron?",
+    "answer": "Each node, or artificial neuron, should be thought of as its own linear regression model.",
+    "start": 43.5,
+    "end": 49.5
+  },
+  {
+    "question": "What is the purpose of linear regression?",
+    "answer": "Linear regression is a mathematical model that's used to predict future events.",
+    "start": 49.5,
+    "end": 55.5
+  },
+  {
+    "question": "What determines the influence of each input on the output in a neural network?",
+    "answer": "The weights of the connections between the nodes determines how much influence each input has on the output.",
+    "start": 55.5,
+    "end": 62.0
+  },
+  {
+    "question": "What components make up each node in a neural network?",
+    "answer": "Each node is composed of input data, weights, a bias or a threshold, and then an output.",
+    "start": 62.0,
+    "end": 68.5
+  },
+  {
+    "question": "How is data transmitted between layers in a neural network?",
+    "answer": "Data is passed from one layer in the neural network to the next in what is known as a feed-forward network.",
+    "start": 68.5,
+    "end": 77.0
+  },
+  {
+    "question": "In the surfing decision example, what is the predicted outcome referred to as?",
+    "answer": "The decision to go or not is our predicted outcome, or known as our y hat.",
+    "start": 85.5,
+    "end": 92.5
+  },
+  {
+    "question": "What was the calculated output for the surfing decision given the example values and threshold?",
+    "answer": "The calculation (one times five plus zero times two plus one times four, minus three) gives a value of six. Six is greater than zero, so the output of this node is one, meaning 'we're going surfing'.",
+    "start": 146.5,
+    "end": 170.0
+  },
+  {
+    "question": "What do neural networks rely on to learn and improve their accuracy over time?",
+    "answer": "Neural networks rely on training data to learn and improve their accuracy over time.",
+    "start": 175.0,
+    "end": 185.0
+  },
+  {
+    "question": "What is the ultimate goal when using a cost function in training a neural network?",
+    "answer": "Ultimately, the goal is to minimize our cost function to ensure the correctness of fit for any given observation.",
+    "start": 198.0,
+    "end": 204.0
+  },
+  {
+    "question": "How does a model adjust its weights and biases to fit training data and minimize the cost function?",
+    "answer": "This happens as the model adjusts its weights and biases to fit the training data set through what's known as gradient descent, allowing the model to determine the direction to take to reduce errors or minimize the cost function.",
+    "start": 204.0,
+    "end": 218.0
+  },
+  {
+    "question": "What are Convolutional Neural Networks (CNNs) well-suited for?",
+    "answer": "Convolutional neural networks (CNNs) have a unique architecture that's well suited for identifying patterns like image recognition.",
+    "start": 226.0,
+    "end": 235.0
+  },
+  {
+    "question": "What are Recurrent Neural Networks (RNNs) primarily leveraged for?",
+    "answer": "Recurrent neural networks (RNNs) are primarily leveraged using time series data to make predictions about future events like sales forecasting.",
+    "start": 235.0,
+    "end": 249.0
+  }
+]

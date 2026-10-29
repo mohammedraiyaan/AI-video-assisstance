@@ -1,0 +1,3074 @@
+{
+  "video_id": "OYvlznJ4IZQ",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Hi everyone, this is GKCS."
+    },
+    {
+      "start": 2.0,
+      "end": 5.8,
+      "text": "In today's video, we will see some of the commonly used terms in the AI space."
+    },
+    {
+      "start": 5.8,
+      "end": 12.5,
+      "text": "If you're an engineer who's building applications, then you'll find these terms useful when communicating with people within your team or outside."
+    },
+    {
+      "start": 12.5,
+      "end": 18.3,
+      "text": "And I think if you know these terms, then it's also easier to learn the deeper subjects around AI."
+    },
+    {
+      "start": 18.3,
+      "end": 22.5,
+      "text": "So by the end of this video, you'll have a list of terms whose definitions you understand quite well."
+    },
+    {
+      "start": 22.5,
+      "end": 26.7,
+      "text": "And I'll also be linking some references in the description so that you can dig into them further."
+    },
+    {
+      "start": 26.7,
+      "end": 28.6,
+      "text": "Let's start."
+    },
+    {
+      "start": 28.6,
+      "end": 38.300000000000004,
+      "text": "The first term that you should know about is large language model, also known as LLM."
+    },
+    {
+      "start": 38.300000000000004,
+      "end": 54.0,
+      "text": "And the definition of this is a neural network that is trained to predict the next term of an input sequence."
+    },
+    {
+      "start": 54.0,
+      "end": 69.4,
+      "text": "For example, if I pass in the query all that glitters to a large language model, then it's going to come up with a response of is not gold."
+    },
+    {
+      "start": 69.4,
+      "end": 75.9,
+      "text": "At which point the complete response of all that glitters is not gold is returned to the user."
+    },
+    {
+      "start": 75.9,
+      "end": 77.5,
+      "text": "What do we mean by training?"
+    },
+    {
+      "start": 77.5,
+      "end": 79.1,
+      "text": "What do we mean by neural network?"
+    },
+    {
+      "start": 79.19999999999999,
+      "end": 84.6,
+      "text": "As we go through this video, you will be understanding these terms better one by one."
+    },
+    {
+      "start": 84.6,
+      "end": 89.5,
+      "text": "Okay, the second term that we are looking at is tokenization."
+    },
+    {
+      "start": 89.5,
+      "end": 92.5,
+      "text": "This has to do with processing the input of a large language model."
+    },
+    {
+      "start": 92.5,
+      "end": 101.89999999999999,
+      "text": "For example, if all that glitters is passed into a large language model, the first thing it's going to do is break this into discrete tokens."
+    },
+    {
+      "start": 101.89999999999999,
+      "end": 104.1,
+      "text": "Okay, that's the process of tokenization."
+    },
+    {
+      "start": 104.1,
+      "end": 106.5,
+      "text": "The first token will be all."
+    },
+    {
+      "start": 106.5,
+      "end": 108.8,
+      "text": "Then there's a space character."
+    },
+    {
+      "start": 108.8,
+      "end": 115.6,
+      "text": "You have then that after which you have glit and finally ours."
+    },
+    {
+      "start": 115.6,
+      "end": 120.6,
+      "text": "You might think, whoa, shouldn't you just break this into space characters and get the job done?"
+    },
+    {
+      "start": 120.6,
+      "end": 122.39999999999999,
+      "text": "The humans don't talk like that."
+    },
+    {
+      "start": 122.39999999999999,
+      "end": 124.9,
+      "text": "We are after all trying to process natural language."
+    },
+    {
+      "start": 124.9,
+      "end": 129.8,
+      "text": "So ours is a common term shimmers, murmurs, flickers."
+    },
+    {
+      "start": 129.8,
+      "end": 138.8,
+      "text": "These are terms which have the suffix of ours, which means that the action of glit is being performed by that object."
+    },
+    {
+      "start": 138.8,
+      "end": 156.8,
+      "text": "Another example of this is in so eating dancing singing all have the suffix of in and a large language model can look at this token of in and know that the previous action is being performed as long as you have the suffix."
+    },
+    {
+      "start": 156.8,
+      "end": 163.60000000000002,
+      "text": "Okay, remember the core problem for a large language model is to truly understand human language so that it can speak it really well."
+    },
+    {
+      "start": 163.60000000000002,
+      "end": 173.70000000000002,
+      "text": "Tokenization is an essential part of that whose end result is that the input text is broken into tokens."
+    },
+    {
+      "start": 173.70000000000002,
+      "end": 179.60000000000002,
+      "text": "Which brings us to our third term vectors."
+    },
+    {
+      "start": 179.6,
+      "end": 182.4,
+      "text": "Tokens tell you what you should focus on."
+    },
+    {
+      "start": 182.4,
+      "end": 186.6,
+      "text": "What is the smallest term that you can derive meaning from?"
+    },
+    {
+      "start": 186.6,
+      "end": 191.6,
+      "text": "But what meaning has to be derived is represented by vectors."
+    },
+    {
+      "start": 191.6,
+      "end": 201.9,
+      "text": "If the large language model can map a two dimensional or an n dimensional space."
+    },
+    {
+      "start": 201.9,
+      "end": 205.8,
+      "text": "Such that all the words which are close in meaning are placed close to each other."
+    },
+    {
+      "start": 205.8,
+      "end": 212.20000000000002,
+      "text": "Then the benefit will be that the meaning of these words will be turned into a coordinate in this n dimensional space."
+    },
+    {
+      "start": 212.20000000000002,
+      "end": 216.3,
+      "text": "This is called a vector."
+    },
+    {
+      "start": 216.3,
+      "end": 231.8,
+      "text": "The coordinate the mapping of a word in a n dimensional space such that nearby words similar meaning words are all clustered together and opposite meaning words are somewhere far away comes through the process of vectorization."
+    },
+    {
+      "start": 232.70000000000002,
+      "end": 239.70000000000002,
+      "text": "The end result of this is that large language models know the inherent meaning of all the words that are in the English vocabulary."
+    },
+    {
+      "start": 239.70000000000002,
+      "end": 244.70000000000002,
+      "text": "And they also know how to break it into small tokens, any input text into tokens."
+    },
+    {
+      "start": 244.70000000000002,
+      "end": 248.70000000000002,
+      "text": "Words which are similar to each other are placed close to each other."
+    },
+    {
+      "start": 248.70000000000002,
+      "end": 255.70000000000002,
+      "text": "Once they know the meaning they can construct sentences effectively."
+    },
+    {
+      "start": 255.7,
+      "end": 262.5,
+      "text": "Okay, so now you have large language models which can tokenize input text convert them into vectors."
+    },
+    {
+      "start": 262.5,
+      "end": 269.7,
+      "text": "But there is one major challenge which actually changed the entire industry here which made large language models very popular."
+    },
+    {
+      "start": 269.7,
+      "end": 276.09999999999997,
+      "text": "And that is attention."
+    },
+    {
+      "start": 276.09999999999997,
+      "end": 280.5,
+      "text": "We just said that all the input tokens for a large language model are converted into vectors."
+    },
+    {
+      "start": 280.5,
+      "end": 283.59999999999997,
+      "text": "The vectors encapsulate the meaning of those words."
+    },
+    {
+      "start": 283.6,
+      "end": 287.40000000000003,
+      "text": "But what about the word apple?"
+    },
+    {
+      "start": 287.40000000000003,
+      "end": 294.40000000000003,
+      "text": "When you say it's a tasty apple, you mean the fruit, the edible apple."
+    },
+    {
+      "start": 294.40000000000003,
+      "end": 300.3,
+      "text": "When you say apple's revenue, you probably mean the company."
+    },
+    {
+      "start": 300.3,
+      "end": 308.20000000000005,
+      "text": "And if you say the apple of my eye, you're probably talking about a young person who you have affection for."
+    },
+    {
+      "start": 308.2,
+      "end": 315.59999999999997,
+      "text": "So apple has different meanings and the only way to understand the meaning is not by looking at the word itself."
+    },
+    {
+      "start": 315.59999999999997,
+      "end": 317.5,
+      "text": "Because that spelling is the exact same."
+    },
+    {
+      "start": 317.5,
+      "end": 328.5,
+      "text": "But by looking at nearby words which add context to the meaning of apple."
+    },
+    {
+      "start": 328.5,
+      "end": 333.59999999999997,
+      "text": "The moment I said tasty, you know that it's some sort of food that he's going to talk about."
+    },
+    {
+      "start": 333.59999999999997,
+      "end": 335.7,
+      "text": "That's how humans derive meaning."
+    },
+    {
+      "start": 335.7,
+      "end": 339.0,
+      "text": "And large language models can derive meaning this way now."
+    },
+    {
+      "start": 339.0,
+      "end": 346.4,
+      "text": "The way they do this is look at nearby words in a sentence, generate those vectors."
+    },
+    {
+      "start": 346.4,
+      "end": 352.3,
+      "text": "So nearby contextual vectors are picked up."
+    },
+    {
+      "start": 352.3,
+      "end": 359.4,
+      "text": "And for ambiguous terms, you end up with ambiguous vectors."
+    },
+    {
+      "start": 359.4,
+      "end": 365.0,
+      "text": "But you can derive the exact meaning by adding this nearby contextual vector to it."
+    },
+    {
+      "start": 365.0,
+      "end": 369.9,
+      "text": "So take the vector of apple, take the vector of revenue."
+    },
+    {
+      "start": 369.9,
+      "end": 374.2,
+      "text": "When you add these two vectors, when you perform some sort of an operation, it's not a direct addition."
+    },
+    {
+      "start": 374.2,
+      "end": 379.1,
+      "text": "But it's the attention operation."
+    },
+    {
+      "start": 379.1,
+      "end": 384.6,
+      "text": "You effectively take the vector of apple and you push it in the direction of the company apple."
+    },
+    {
+      "start": 384.6,
+      "end": 390.4,
+      "text": "So Google, Meta, Microsoft are all here."
+    },
+    {
+      "start": 390.4,
+      "end": 393.8,
+      "text": "The first operation of vector revenue is going to send it there."
+    },
+    {
+      "start": 393.8,
+      "end": 401.0,
+      "text": "If you instead add a vector of tasty to this, if you perform the attention mechanism of these two vectors,"
+    },
+    {
+      "start": 401.0,
+      "end": 405.3,
+      "text": "then it's going to push the vector of apple to banana, chiku and guava."
+    },
+    {
+      "start": 405.3,
+      "end": 408.40000000000003,
+      "text": "Okay, so you can tokenize input text."
+    },
+    {
+      "start": 408.40000000000003,
+      "end": 411.3,
+      "text": "You can derive the inherent meaning of all of those tokens."
+    },
+    {
+      "start": 411.3,
+      "end": 414.90000000000003,
+      "text": "And for ambiguous tokens for tokens which are difficult to understand,"
+    },
+    {
+      "start": 414.90000000000003,
+      "end": 419.7,
+      "text": "you have a mechanism to add context by looking at nearby words."
+    },
+    {
+      "start": 419.8,
+      "end": 424.0,
+      "text": "And this is another breakthrough that large language models have made."
+    },
+    {
+      "start": 424.0,
+      "end": 425.0,
+      "text": "This was in 2017."
+    },
+    {
+      "start": 425.0,
+      "end": 430.2,
+      "text": "The paper came out then, but in 2022, this became really, really famous with child GPT being released."
+    },
+    {
+      "start": 430.2,
+      "end": 435.3,
+      "text": "The quality of responses of a large language model far exceed anything else that we have seen earlier."
+    },
+    {
+      "start": 435.3,
+      "end": 438.4,
+      "text": "Okay, because it is able to derive contextual meaning,"
+    },
+    {
+      "start": 438.4,
+      "end": 442.9,
+      "text": "it's able to construct sentences in a way that humans speak."
+    },
+    {
+      "start": 442.9,
+      "end": 449.4,
+      "text": "Okay, so now we know how LNMs can process input."
+    },
+    {
+      "start": 450.09999999999997,
+      "end": 455.0,
+      "text": "But how do you train the LNM to predict the next token?"
+    },
+    {
+      "start": 456.3,
+      "end": 462.0,
+      "text": "Okay, here's where there was a major breakthrough in 2017."
+    },
+    {
+      "start": 462.0,
+      "end": 471.8,
+      "text": "Basically, the concept of self-supervised learning became very popular."
+    },
+    {
+      "start": 471.8,
+      "end": 478.3,
+      "text": "Self-supervised learning means that instead of telling the model exactly what it needs to do,"
+    },
+    {
+      "start": 478.3,
+      "end": 483.40000000000003,
+      "text": "the structure of the input data is such that the model knows what it should do."
+    },
+    {
+      "start": 483.40000000000003,
+      "end": 487.0,
+      "text": "Okay, for example, you're watching this video right now."
+    },
+    {
+      "start": 487.0,
+      "end": 489.6,
+      "text": "I'm going to make a part of this video blank."
+    },
+    {
+      "start": 489.6,
+      "end": 497.90000000000003,
+      "text": "So one, two, three, four, five."
+    },
+    {
+      "start": 497.90000000000003,
+      "end": 500.6,
+      "text": "What do you think is being hidden right now?"
+    },
+    {
+      "start": 500.6,
+      "end": 503.7,
+      "text": "What number is coming to your mind?"
+    },
+    {
+      "start": 503.7,
+      "end": 505.6,
+      "text": "Let's see if that's right."
+    },
+    {
+      "start": 505.6,
+      "end": 514.5,
+      "text": "Yes, most of you guessed one because we went in the sequence five, four, three, two, one."
+    },
+    {
+      "start": 514.5,
+      "end": 517.5,
+      "text": "Okay, but when it comes to a video, you can also do something else."
+    },
+    {
+      "start": 517.5,
+      "end": 519.9,
+      "text": "Let me make another part of the video blank right now."
+    },
+    {
+      "start": 522.3000000000001,
+      "end": 525.3000000000001,
+      "text": "Where do you think the other eye is looking?"
+    },
+    {
+      "start": 527.0,
+      "end": 527.7,
+      "text": "Let's check."
+    },
+    {
+      "start": 528.9,
+      "end": 530.0,
+      "text": "Most of you got it right."
+    },
+    {
+      "start": 530.0,
+      "end": 532.2,
+      "text": "Both eyes are looking upwards."
+    },
+    {
+      "start": 532.2,
+      "end": 540.6,
+      "text": "So what's happening is a section of the input can be predicted even if you make that section blank,"
+    },
+    {
+      "start": 540.6,
+      "end": 549.5,
+      "text": "which means that there is inherent structure in your input, which your mind is able to replace"
+    },
+    {
+      "start": 549.5,
+      "end": 557.9000000000001,
+      "text": "with the expected token or expected output."
+    },
+    {
+      "start": 557.9000000000001,
+      "end": 562.0,
+      "text": "Now, the standard way to train such a model would be called supervised learning."
+    },
+    {
+      "start": 562.0,
+      "end": 567.8,
+      "text": "Where you would have a human being saying that if the input text is all that glitters,"
+    },
+    {
+      "start": 567.8,
+      "end": 572.8,
+      "text": "then the model should predict is not gold."
+    },
+    {
+      "start": 572.8,
+      "end": 579.6,
+      "text": "If the input text is at two, then the output should be brutus."
+    },
+    {
+      "start": 579.6,
+      "end": 586.1,
+      "text": "Instead, self supervised learning has made getting test data much cheaper."
+    },
+    {
+      "start": 586.1,
+      "end": 595.9,
+      "text": "Here, if you have at two brutus, then the model is going to be fed in this text and it's going to make three predictions."
+    },
+    {
+      "start": 596.5,
+      "end": 599.3000000000001,
+      "text": "One, what comes after it?"
+    },
+    {
+      "start": 600.0,
+      "end": 610.04,
+      "text": "2, what comes after at 2 and 3, what comes after at 2, Brutus."
+    },
+    {
+      "start": 610.04,
+      "end": 613.8,
+      "text": "No humans will involve, you had some text in the world, maybe you scraped this off the"
+    },
+    {
+      "start": 613.8,
+      "end": 618.36,
+      "text": "internet and now you're telling the model, look I have 3 questions for you, tell me what"
+    },
+    {
+      "start": 618.36,
+      "end": 619.96,
+      "text": "are the right answers."
+    },
+    {
+      "start": 619.96,
+      "end": 625.04,
+      "text": "So the model looks at these 3 puzzles, they are all running in parallel and they try to"
+    },
+    {
+      "start": 625.04,
+      "end": 626.04,
+      "text": "make predictions."
+    },
+    {
+      "start": 626.16,
+      "end": 633.16,
+      "text": "At the model might say no, the model might say 2, the model might say something, but"
+    },
+    {
+      "start": 633.16,
+      "end": 637.2,
+      "text": "you train the model that 2 is the expected response."
+    },
+    {
+      "start": 637.2,
+      "end": 642.96,
+      "text": "So if it makes a mistake, then you penalize the model that increases loss and so the neural"
+    },
+    {
+      "start": 642.96,
+      "end": 646.12,
+      "text": "network weights are updated."
+    },
+    {
+      "start": 646.12,
+      "end": 652.2,
+      "text": "In the second task you have at 2, if the model makes the prediction of Brutus, then you tell"
+    },
+    {
+      "start": 652.2,
+      "end": 655.72,
+      "text": "the model that this is great, the weights don't need to be updated."
+    },
+    {
+      "start": 655.72,
+      "end": 661.52,
+      "text": "But if it says Caesar, then the model has to be penalized and so the internal weights"
+    },
+    {
+      "start": 661.52,
+      "end": 663.24,
+      "text": "are updated."
+    },
+    {
+      "start": 663.24,
+      "end": 670.76,
+      "text": "In the third case, if you predict a stop token, at 2 Brutus, that's it, then you'll get it"
+    },
+    {
+      "start": 670.76,
+      "end": 679.04,
+      "text": "wrong, if it's a comma, you're right and if it's then maybe you're also right."
+    },
+    {
+      "start": 679.04,
+      "end": 683.36,
+      "text": "What you're doing is you're looking at text which already exists in the world and you're"
+    },
+    {
+      "start": 683.4,
+      "end": 688.04,
+      "text": "creating multiple challenges for yourself without human intervention."
+    },
+    {
+      "start": 688.04,
+      "end": 691.48,
+      "text": "This is what makes the model self-supervised."
+    },
+    {
+      "start": 691.48,
+      "end": 696.4,
+      "text": "It might seem like a small thing, but this architectural decision or this benefit of"
+    },
+    {
+      "start": 696.4,
+      "end": 700.08,
+      "text": "the large language model makes it really, really scalable."
+    },
+    {
+      "start": 700.08,
+      "end": 704.16,
+      "text": "In fact, most AI models now are moving to self-supervised learning."
+    },
+    {
+      "start": 704.16,
+      "end": 709.52,
+      "text": "Even image models like we discussed are looking for removing some patches of the image and"
+    },
+    {
+      "start": 709.52,
+      "end": 711.6800000000001,
+      "text": "trying to predict those patches."
+    },
+    {
+      "start": 711.6800000000001,
+      "end": 715.6800000000001,
+      "text": "The benefit of this is you understand the underlying structure and the inherent meaning"
+    },
+    {
+      "start": 715.6800000000001,
+      "end": 717.64,
+      "text": "of those patches."
+    },
+    {
+      "start": 717.64,
+      "end": 719.52,
+      "text": "In the case of text, it's going to be terms."
+    },
+    {
+      "start": 719.52,
+      "end": 724.28,
+      "text": "In the case of images, they are a bunch of pixels and in the case of video, you might"
+    },
+    {
+      "start": 724.28,
+      "end": 728.3199999999999,
+      "text": "understand how an object even moves."
+    },
+    {
+      "start": 728.3199999999999,
+      "end": 732.04,
+      "text": "That explains what self-supervised learning is."
+    },
+    {
+      "start": 732.04,
+      "end": 736.44,
+      "text": "Next is the transformer."
+    },
+    {
+      "start": 736.44,
+      "end": 740.8,
+      "text": "Most people confuse transformer with large language model, which is completely understandable"
+    },
+    {
+      "start": 741.4,
+      "end": 743.04,
+      "text": "but that's not the case."
+    },
+    {
+      "start": 743.04,
+      "end": 748.56,
+      "text": "A large language model is something which predicts the next token given an input sequence."
+    },
+    {
+      "start": 748.56,
+      "end": 752.96,
+      "text": "A transformer does the exact same thing, but it's a specific algorithm or a specific"
+    },
+    {
+      "start": 752.96,
+      "end": 756.0,
+      "text": "method by which you predict the next token."
+    },
+    {
+      "start": 756.0,
+      "end": 765.0,
+      "text": "A transformer basically is input tokens being run through an attention block, which is then"
+    },
+    {
+      "start": 765.16,
+      "end": 771.52,
+      "text": "forwarded to a neural network, a feed-forward neural network and then you have a bunch of"
+    },
+    {
+      "start": 771.52,
+      "end": 772.52,
+      "text": "outputs."
+    },
+    {
+      "start": 772.52,
+      "end": 776.76,
+      "text": "You can think of these as output vectors."
+    },
+    {
+      "start": 776.76,
+      "end": 782.08,
+      "text": "These vectors are then passed into another layer of attention."
+    },
+    {
+      "start": 782.08,
+      "end": 784.76,
+      "text": "The first layer of attention, like we said, disambiguates terms."
+    },
+    {
+      "start": 784.76,
+      "end": 787.48,
+      "text": "The second layer might find more complex relationships."
+    },
+    {
+      "start": 787.48,
+      "end": 788.84,
+      "text": "It might find sarcasm."
+    },
+    {
+      "start": 788.84,
+      "end": 790.4,
+      "text": "It might find implications."
+    },
+    {
+      "start": 790.4,
+      "end": 794.04,
+      "text": "For example, a crane was hunting a crab."
+    },
+    {
+      "start": 794.0799999999999,
+      "end": 796.56,
+      "text": "In the first case, you understood it's not the metal crane."
+    },
+    {
+      "start": 796.56,
+      "end": 798.4,
+      "text": "It's a bird crane."
+    },
+    {
+      "start": 798.4,
+      "end": 802.88,
+      "text": "But in the second one, you might infer that the crab is fearful."
+    },
+    {
+      "start": 802.88,
+      "end": 806.4,
+      "text": "You might understand the crane is hungry."
+    },
+    {
+      "start": 806.4,
+      "end": 811.0799999999999,
+      "text": "This is the second layer and then you have another feed-forward neural network and so"
+    },
+    {
+      "start": 811.0799999999999,
+      "end": 812.0799999999999,
+      "text": "on."
+    },
+    {
+      "start": 812.0799999999999,
+      "end": 815.48,
+      "text": "Till finally, you are confident enough to generate an output."
+    },
+    {
+      "start": 815.48,
+      "end": 817.0,
+      "text": "You have these stacked."
+    },
+    {
+      "start": 817.0,
+      "end": 819.24,
+      "text": "Sometimes they're stacked to 12 layers."
+    },
+    {
+      "start": 819.24,
+      "end": 820.24,
+      "text": "Sometimes more."
+    },
+    {
+      "start": 820.24,
+      "end": 824.6800000000001,
+      "text": "I think recent GPT architectures are in hundreds."
+    },
+    {
+      "start": 824.6800000000001,
+      "end": 830.44,
+      "text": "The main idea behind this is you're getting all of the meaning from your input tokens"
+    },
+    {
+      "start": 830.44,
+      "end": 835.08,
+      "text": "and then manipulating them again and again to finally predict what the next word should"
+    },
+    {
+      "start": 835.08,
+      "end": 836.58,
+      "text": "be."
+    },
+    {
+      "start": 836.58,
+      "end": 840.56,
+      "text": "This attention block is order n squared."
+    },
+    {
+      "start": 840.56,
+      "end": 844.72,
+      "text": "You could replace this transformer in a large language model with something else."
+    },
+    {
+      "start": 844.72,
+      "end": 849.12,
+      "text": "Tomorrow, a new architecture could come in, in which case the transformer and the state"
+    },
+    {
+      "start": 849.12,
+      "end": 856.88,
+      "text": "space models are gotten rid of, which could be a diffusion model that constructs essays"
+    },
+    {
+      "start": 856.88,
+      "end": 858.96,
+      "text": "or text."
+    },
+    {
+      "start": 858.96,
+      "end": 860.96,
+      "text": "The large language model is actually the product."
+    },
+    {
+      "start": 860.96,
+      "end": 864.48,
+      "text": "You can think of it as a car and this is the engine."
+    },
+    {
+      "start": 864.48,
+      "end": 869.0799999999999,
+      "text": "A car, many people say is just the engine, but no, there are some other fancy things around"
+    },
+    {
+      "start": 869.0799999999999,
+      "end": 870.0799999999999,
+      "text": "it."
+    },
+    {
+      "start": 870.0799999999999,
+      "end": 873.12,
+      "text": "The internal algorithm can be different."
+    },
+    {
+      "start": 873.12,
+      "end": 878.4,
+      "text": "Number seven, it's fine tuning."
+    },
+    {
+      "start": 878.4,
+      "end": 887.12,
+      "text": "We said that a large language model is something that is trained to predict the next term of"
+    },
+    {
+      "start": 887.12,
+      "end": 889.0799999999999,
+      "text": "an input sequence."
+    },
+    {
+      "start": 889.0799999999999,
+      "end": 892.76,
+      "text": "The question is what type of next token are we talking about?"
+    },
+    {
+      "start": 892.76,
+      "end": 897.0,
+      "text": "If you are talking about a medical large language model, something which helps doctors explain"
+    },
+    {
+      "start": 897.0,
+      "end": 901.6800000000001,
+      "text": "the diagnosis of a patient, then you're probably going to be thinking of medical terms."
+    },
+    {
+      "start": 901.6800000000001,
+      "end": 907.24,
+      "text": "If you have a model which is trained on financial operations, then the same model for the same"
+    },
+    {
+      "start": 907.24,
+      "end": 911.28,
+      "text": "query is going to think in terms of financial terms."
+    },
+    {
+      "start": 911.28,
+      "end": 916.2,
+      "text": "The next token that the model comes up with is not always going to be general."
+    },
+    {
+      "start": 916.2,
+      "end": 922.72,
+      "text": "You're first going to train your base model in a self-supervised fashion."
+    },
+    {
+      "start": 922.72,
+      "end": 931.1600000000001,
+      "text": "Then you're going to take that model and make it go through a series of questions and answers."
+    },
+    {
+      "start": 932.08,
+      "end": 943.0,
+      "text": "This process is called fine tuning and goes something like, who is the president of USA?"
+    },
+    {
+      "start": 943.0,
+      "end": 945.72,
+      "text": "Donald Trump."
+    },
+    {
+      "start": 945.72,
+      "end": 953.48,
+      "text": "But the model could also say, I would like to know that too."
+    },
+    {
+      "start": 953.48,
+      "end": 955.32,
+      "text": "Here's where things are going wrong."
+    },
+    {
+      "start": 955.32,
+      "end": 957.9200000000001,
+      "text": "The model should not be responding like this."
+    },
+    {
+      "start": 957.9200000000001,
+      "end": 965.12,
+      "text": "Give us a direct answer or confess that you don't know or you could say no."
+    },
+    {
+      "start": 965.12,
+      "end": 970.88,
+      "text": "But this is also very, very bad because the models are trained to be helpful."
+    },
+    {
+      "start": 970.88,
+      "end": 979.28,
+      "text": "So what's happening is other plausible responses which are not wrong but are not desirable"
+    },
+    {
+      "start": 979.28,
+      "end": 982.8,
+      "text": "are penalized in the fine tuning process."
+    },
+    {
+      "start": 982.8,
+      "end": 985.12,
+      "text": "You have these questions and answers."
+    },
+    {
+      "start": 985.12,
+      "end": 992.52,
+      "text": "The fine tuning process forces the model to take a question and give answers as expected."
+    },
+    {
+      "start": 992.52,
+      "end": 996.6800000000001,
+      "text": "So when it comes to a medical diagnosis, the model is going to train itself."
+    },
+    {
+      "start": 996.6800000000001,
+      "end": 1001.4,
+      "text": "The internal weights will be updated in such a way that it will learn to speak in medical"
+    },
+    {
+      "start": 1001.4,
+      "end": 1004.24,
+      "text": "jargon or medical terms."
+    },
+    {
+      "start": 1004.24,
+      "end": 1010.04,
+      "text": "And so this step where a base model is trained to answer in a specific way is called fine"
+    },
+    {
+      "start": 1010.04,
+      "end": 1011.36,
+      "text": "tuning."
+    },
+    {
+      "start": 1011.36,
+      "end": 1015.56,
+      "text": "The same base model can be run through different sets of questions and answers to come up with"
+    },
+    {
+      "start": 1015.56,
+      "end": 1017.72,
+      "text": "multiple fine tuned models."
+    },
+    {
+      "start": 1017.72,
+      "end": 1023.56,
+      "text": "The base model of Lama can be fine tuned by a company to answer their customer specific"
+    },
+    {
+      "start": 1023.56,
+      "end": 1026.2,
+      "text": "queries."
+    },
+    {
+      "start": 1026.2,
+      "end": 1031.32,
+      "text": "Few short prompting."
+    },
+    {
+      "start": 1031.32,
+      "end": 1037.16,
+      "text": "So the main idea behind few short prompting is before you send a query to a model, before"
+    },
+    {
+      "start": 1037.16,
+      "end": 1045.3200000000002,
+      "text": "you send a plain Manila query to a large language model and ask it to come up with a response,"
+    },
+    {
+      "start": 1045.3200000000002,
+      "end": 1054.64,
+      "text": "you augment the query, you add more information by saying, look, if the query is where is"
+    },
+    {
+      "start": 1054.64,
+      "end": 1060.8400000000001,
+      "text": "my parcel, then let me tell you that there are some examples that I want you to go through."
+    },
+    {
+      "start": 1060.8400000000001,
+      "end": 1065.88,
+      "text": "This is happening during influence time, during response time, in production, right, life."
+    },
+    {
+      "start": 1065.88,
+      "end": 1073.8,
+      "text": "Your system, your server sends the original query and sends examples to the model so that"
+    },
+    {
+      "start": 1073.8,
+      "end": 1079.6399999999999,
+      "text": "it takes this into context and then gives an appropriate response."
+    },
+    {
+      "start": 1079.6399999999999,
+      "end": 1081.68,
+      "text": "The quality of the response goes up."
+    },
+    {
+      "start": 1081.68,
+      "end": 1082.88,
+      "text": "This is called few short prompting."
+    },
+    {
+      "start": 1082.88,
+      "end": 1088.6399999999999,
+      "text": "It's basically example prompting, example in prompt."
+    },
+    {
+      "start": 1088.6399999999999,
+      "end": 1093.24,
+      "text": "That's it."
+    },
+    {
+      "start": 1093.24,
+      "end": 1099.12,
+      "text": "It brings us to point number nine, which is very interesting and is completely exploded,"
+    },
+    {
+      "start": 1099.12,
+      "end": 1105.08,
+      "text": "which is retrieval augmented generation."
+    },
+    {
+      "start": 1105.08,
+      "end": 1109.2,
+      "text": "In fact, the AI space is moving so quickly that people are saying, rag or retrieval augmented"
+    },
+    {
+      "start": 1109.2,
+      "end": 1112.96,
+      "text": "generation is already dead."
+    },
+    {
+      "start": 1112.96,
+      "end": 1119.4,
+      "text": "So the basic idea again is that you have a large language model and you pass in the input"
+    },
+    {
+      "start": 1119.4,
+      "end": 1122.12,
+      "text": "from the server."
+    },
+    {
+      "start": 1122.12,
+      "end": 1124.3600000000001,
+      "text": "So a customer connects to you here."
+    },
+    {
+      "start": 1124.3600000000001,
+      "end": 1125.44,
+      "text": "They hit your API."
+    },
+    {
+      "start": 1125.44,
+      "end": 1128.4,
+      "text": "The server says, you know what, this is the customer query."
+    },
+    {
+      "start": 1128.4,
+      "end": 1130.2,
+      "text": "Let's forward that to the large language model."
+    },
+    {
+      "start": 1130.2,
+      "end": 1131.88,
+      "text": "Along with that, let's give some examples."
+    },
+    {
+      "start": 1131.88,
+      "end": 1133.96,
+      "text": "So that's few short prompting."
+    },
+    {
+      "start": 1133.96,
+      "end": 1139.3200000000002,
+      "text": "And along with that, since there are some company policies that I want you to know of"
+    },
+    {
+      "start": 1139.3200000000002,
+      "end": 1143.88,
+      "text": "large language model, I'll give you those documents."
+    },
+    {
+      "start": 1143.88,
+      "end": 1148.76,
+      "text": "So in real time, the server goes, patches the most relevant documents, maybe your policy"
+    },
+    {
+      "start": 1148.76,
+      "end": 1156.32,
+      "text": "document, maybe your terms and conditions when placing an order, and maybe many more"
+    },
+    {
+      "start": 1156.32,
+      "end": 1157.8,
+      "text": "things."
+    },
+    {
+      "start": 1157.8,
+      "end": 1161.44,
+      "text": "You send these documents along with examples of how you should respond."
+    },
+    {
+      "start": 1161.44,
+      "end": 1164.6,
+      "text": "This gives you a good idea of the format of the response."
+    },
+    {
+      "start": 1164.6,
+      "end": 1168.6,
+      "text": "This gives you a good idea of the company specific context."
+    },
+    {
+      "start": 1168.6,
+      "end": 1172.12,
+      "text": "And this is the direct user input query."
+    },
+    {
+      "start": 1172.12,
+      "end": 1179.52,
+      "text": "With all of this, the large language model tends to give very high quality responses."
+    },
+    {
+      "start": 1179.52,
+      "end": 1181.56,
+      "text": "Now the question is, where are you getting these documents from?"
+    },
+    {
+      "start": 1181.56,
+      "end": 1184.92,
+      "text": "How does the server know which documents are related to which query?"
+    },
+    {
+      "start": 1184.92,
+      "end": 1185.92,
+      "text": "There are many ways to do this."
+    },
+    {
+      "start": 1185.92,
+      "end": 1190.3200000000002,
+      "text": "If you talk to Neo4j, which is a graph database company, they'll tell you you should store"
+    },
+    {
+      "start": 1190.3200000000002,
+      "end": 1192.88,
+      "text": "things in a graph DB."
+    },
+    {
+      "start": 1192.88,
+      "end": 1198.48,
+      "text": "If you talk to Neon, then they'll tell you that you should store things in a vector DB."
+    },
+    {
+      "start": 1198.48,
+      "end": 1200.0,
+      "text": "And some people will say, just keep everything in there."
+    },
+    {
+      "start": 1200.0,
+      "end": 1202.56,
+      "text": "memory, just keep everything in cache."
+    },
+    {
+      "start": 1202.56,
+      "end": 1203.92,
+      "text": "This doesn't matter."
+    },
+    {
+      "start": 1203.92,
+      "end": 1206.04,
+      "text": "How you fetch the documents doesn't matter so much."
+    },
+    {
+      "start": 1206.04,
+      "end": 1208.76,
+      "text": "Usually it's a vector DB, by the way, because."
+    },
+    {
+      "start": 1208.76,
+      "end": 1212.68,
+      "text": "But I mean, it is easier to find relevant documents"
+    },
+    {
+      "start": 1212.68,
+      "end": 1215.0,
+      "text": "because you just do a similarity search."
+    },
+    {
+      "start": 1215.0,
+      "end": 1217.36,
+      "text": "Once you have the documents, you pass that"
+    },
+    {
+      "start": 1217.36,
+      "end": 1218.4,
+      "text": "to a large language model."
+    },
+    {
+      "start": 1218.4,
+      "end": 1221.52,
+      "text": "The large language model converts it internally into vectors"
+    },
+    {
+      "start": 1221.52,
+      "end": 1224.36,
+      "text": "and then gives you a response."
+    },
+    {
+      "start": 1224.36,
+      "end": 1225.64,
+      "text": "But at a high level, you just want"
+    },
+    {
+      "start": 1225.64,
+      "end": 1228.44,
+      "text": "to add more and more context."
+    },
+    {
+      "start": 1228.44,
+      "end": 1231.32,
+      "text": "You retrieve the context, augment the query,"
+    },
+    {
+      "start": 1231.32,
+      "end": 1234.28,
+      "text": "and then generate a response."
+    },
+    {
+      "start": 1234.28,
+      "end": 1240.0,
+      "text": "The 10th term, which is vector database."
+    },
+    {
+      "start": 1240.0,
+      "end": 1241.36,
+      "text": "We just mentioned vector database"
+    },
+    {
+      "start": 1241.36,
+      "end": 1243.24,
+      "text": "is something which is used to find"
+    },
+    {
+      "start": 1243.24,
+      "end": 1245.8,
+      "text": "relevant documents for an incoming query."
+    },
+    {
+      "start": 1245.8,
+      "end": 1248.44,
+      "text": "Let's see how that happens."
+    },
+    {
+      "start": 1248.44,
+      "end": 1257.52,
+      "text": "You have the request, I am upset with your payment system."
+    },
+    {
+      "start": 1257.52,
+      "end": 1261.12,
+      "text": "I expect a refund."
+    },
+    {
+      "start": 1261.12,
+      "end": 1263.96,
+      "text": "There's a lot of terms in this query."
+    },
+    {
+      "start": 1263.96,
+      "end": 1266.6,
+      "text": "A human being can read this and easily understand"
+    },
+    {
+      "start": 1266.6,
+      "end": 1268.04,
+      "text": "what the user is feeling."
+    },
+    {
+      "start": 1268.04,
+      "end": 1268.96,
+      "text": "They're feeling upset."
+    },
+    {
+      "start": 1268.96,
+      "end": 1270.64,
+      "text": "I mean, they've clearly mentioned it."
+    },
+    {
+      "start": 1270.64,
+      "end": 1272.04,
+      "text": "But they are looking for a refund."
+    },
+    {
+      "start": 1272.04,
+      "end": 1274.16,
+      "text": "If you give them a refund, maybe the upset feeling"
+    },
+    {
+      "start": 1274.16,
+      "end": 1276.44,
+      "text": "will go away."
+    },
+    {
+      "start": 1276.44,
+      "end": 1277.24,
+      "text": "What do you do?"
+    },
+    {
+      "start": 1277.24,
+      "end": 1279.52,
+      "text": "Which documents do you search for?"
+    },
+    {
+      "start": 1279.52,
+      "end": 1281.6,
+      "text": "You could search for all documents"
+    },
+    {
+      "start": 1281.6,
+      "end": 1284.44,
+      "text": "where the word upset exists."
+    },
+    {
+      "start": 1284.44,
+      "end": 1286.56,
+      "text": "But maybe you don't have it in your company policy."
+    },
+    {
+      "start": 1286.92,
+      "end": 1290.08,
+      "text": "Nowhere is it mentioned that a user is upset."
+    },
+    {
+      "start": 1290.08,
+      "end": 1292.72,
+      "text": "But you have a document which mentions"
+    },
+    {
+      "start": 1292.72,
+      "end": 1297.32,
+      "text": "if the user is giving you a low rating"
+    },
+    {
+      "start": 1297.32,
+      "end": 1300.96,
+      "text": "or if a user drops off."
+    },
+    {
+      "start": 1300.96,
+      "end": 1304.28,
+      "text": "How do you make that decision that upset as a word"
+    },
+    {
+      "start": 1304.28,
+      "end": 1308.08,
+      "text": "is close to the low rating or drop off?"
+    },
+    {
+      "start": 1308.08,
+      "end": 1309.76,
+      "text": "We spoke about vectors."
+    },
+    {
+      "start": 1309.76,
+      "end": 1312.44,
+      "text": "Vectors can encapsulate semantic meaning,"
+    },
+    {
+      "start": 1312.44,
+      "end": 1314.92,
+      "text": "which means documents which store similar words"
+    },
+    {
+      "start": 1314.92,
+      "end": 1319.88,
+      "text": "are going to be similar or close in distance."
+    },
+    {
+      "start": 1319.88,
+      "end": 1322.4,
+      "text": "Remember, vectors are basically coordinates."
+    },
+    {
+      "start": 1322.4,
+      "end": 1325.6,
+      "text": "So the distance between upset and documents having low rating"
+    },
+    {
+      "start": 1325.6,
+      "end": 1327.56,
+      "text": "are going to be low."
+    },
+    {
+      "start": 1327.56,
+      "end": 1329.8,
+      "text": "You will fetch the documents which mention low rating"
+    },
+    {
+      "start": 1329.8,
+      "end": 1333.92,
+      "text": "or drop offs and use them to add context"
+    },
+    {
+      "start": 1333.92,
+      "end": 1335.8,
+      "text": "to your large language model."
+    },
+    {
+      "start": 1335.8,
+      "end": 1340.44,
+      "text": "When you have an incoming query from the user,"
+    },
+    {
+      "start": 1340.44,
+      "end": 1345.24,
+      "text": "you're going to find which document is closest to the query"
+    },
+    {
+      "start": 1345.24,
+      "end": 1348.84,
+      "text": "and add that to the large language model's context."
+    },
+    {
+      "start": 1348.84,
+      "end": 1351.52,
+      "text": "So this document will be sent along with the original user"
+    },
+    {
+      "start": 1351.52,
+      "end": 1353.96,
+      "text": "query and maybe a system prompt."
+    },
+    {
+      "start": 1358.76,
+      "end": 1361.48,
+      "text": "Where are you going to store these documents"
+    },
+    {
+      "start": 1361.48,
+      "end": 1366.32,
+      "text": "in a vector database, which helps you perform these similarity"
+    },
+    {
+      "start": 1366.32,
+      "end": 1368.16,
+      "text": "searches efficiently?"
+    },
+    {
+      "start": 1368.16,
+      "end": 1370.28,
+      "text": "Some of these algorithms are hierarchical navigable"
+    },
+    {
+      "start": 1370.28,
+      "end": 1371.04,
+      "text": "in a small world."
+    },
+    {
+      "start": 1371.04,
+      "end": 1373.8,
+      "text": "We have spoken about this in detail in the interviewer ID"
+    },
+    {
+      "start": 1373.8,
+      "end": 1374.92,
+      "text": "course."
+    },
+    {
+      "start": 1374.92,
+      "end": 1377.68,
+      "text": "At the end of the day, the vector database"
+    },
+    {
+      "start": 1377.68,
+      "end": 1378.84,
+      "text": "is like a black box to you."
+    },
+    {
+      "start": 1378.84,
+      "end": 1381.84,
+      "text": "You can store documents and you can quickly retrieve them"
+    },
+    {
+      "start": 1381.84,
+      "end": 1384.4,
+      "text": "when you need them."
+    },
+    {
+      "start": 1384.4,
+      "end": 1384.8,
+      "text": "Great."
+    },
+    {
+      "start": 1384.8,
+      "end": 1387.88,
+      "text": "So you can store internal company documents and information"
+    },
+    {
+      "start": 1387.88,
+      "end": 1390.88,
+      "text": "in a vector database to get context"
+    },
+    {
+      "start": 1390.88,
+      "end": 1392.92,
+      "text": "for a large language model."
+    },
+    {
+      "start": 1392.92,
+      "end": 1397.48,
+      "text": "But what if the context exists outside your system?"
+    },
+    {
+      "start": 1397.48,
+      "end": 1401.56,
+      "text": "So this challenge was met with model context protocol."
+    },
+    {
+      "start": 1404.92,
+      "end": 1407.88,
+      "text": "As the name suggests, it's a protocol or a way"
+    },
+    {
+      "start": 1407.88,
+      "end": 1414.16,
+      "text": "to communicate to transfer context into a model."
+    },
+    {
+      "start": 1414.16,
+      "end": 1416.76,
+      "text": "The basic idea here, I made a detailed video on this."
+    },
+    {
+      "start": 1416.76,
+      "end": 1417.6,
+      "text": "You can check it out."
+    },
+    {
+      "start": 1417.6,
+      "end": 1420.56,
+      "text": "But the basic idea here is that you"
+    },
+    {
+      "start": 1420.56,
+      "end": 1424.6399999999999,
+      "text": "have a large language model which, before receiving"
+    },
+    {
+      "start": 1424.6399999999999,
+      "end": 1431.48,
+      "text": "an incoming query from a user, has a client, an MCP client,"
+    },
+    {
+      "start": 1431.48,
+      "end": 1434.92,
+      "text": "model context protocol client, which"
+    },
+    {
+      "start": 1434.92,
+      "end": 1439.12,
+      "text": "forwards the initial query, user query."
+    },
+    {
+      "start": 1439.12,
+      "end": 1441.52,
+      "text": "The LM now makes a decision."
+    },
+    {
+      "start": 1441.52,
+      "end": 1444.24,
+      "text": "It says that there may be external tools or databases"
+    },
+    {
+      "start": 1444.24,
+      "end": 1447.32,
+      "text": "that I want to connect to."
+    },
+    {
+      "start": 1447.32,
+      "end": 1449.88,
+      "text": "The client gets to know of this and connects"
+    },
+    {
+      "start": 1449.88,
+      "end": 1459.72,
+      "text": "with external MCP servers in one case that might be Indigo,"
+    },
+    {
+      "start": 1459.72,
+      "end": 1465.6399999999999,
+      "text": "in another case that will be Air India, whose MCP server can"
+    },
+    {
+      "start": 1465.6399999999999,
+      "end": 1467.84,
+      "text": "give you details around Air India."
+    },
+    {
+      "start": 1467.84,
+      "end": 1472.32,
+      "text": "So you can think of this as a wrapper for Air India's database,"
+    },
+    {
+      "start": 1472.32,
+      "end": 1475.72,
+      "text": "this as a wrapper for Indigo's database."
+    },
+    {
+      "start": 1475.72,
+      "end": 1477.76,
+      "text": "As a response, you are going to get flight details."
+    },
+    {
+      "start": 1480.48,
+      "end": 1484.12,
+      "text": "From each of these airlines."
+    },
+    {
+      "start": 1484.12,
+      "end": 1486.44,
+      "text": "Once you have the details, you can forward it to the LM"
+    },
+    {
+      "start": 1486.44,
+      "end": 1490.08,
+      "text": "saying that, hey, along with the user query"
+    },
+    {
+      "start": 1490.08,
+      "end": 1492.3600000000001,
+      "text": "and along with whatever system prompt or relevant context"
+    },
+    {
+      "start": 1492.3600000000001,
+      "end": 1494.4,
+      "text": "that I could get from my vector database,"
+    },
+    {
+      "start": 1494.4,
+      "end": 1497.6399999999999,
+      "text": "I'm also adding flight details, real time information,"
+    },
+    {
+      "start": 1497.6399999999999,
+      "end": 1500.68,
+      "text": "from external servers, which you can now consume"
+    },
+    {
+      "start": 1500.68,
+      "end": 1503.0,
+      "text": "to come up with a decision."
+    },
+    {
+      "start": 1503.0,
+      "end": 1505.4,
+      "text": "And the large language model at this point might say, OK,"
+    },
+    {
+      "start": 1505.4,
+      "end": 1512.6799999999998,
+      "text": "book flight number, i.e. Indigo, 1-0-2-0, which then results"
+    },
+    {
+      "start": 1512.6799999999998,
+      "end": 1519.56,
+      "text": "in another API call to book on the MCP server of Indigo."
+    },
+    {
+      "start": 1519.56,
+      "end": 1522.52,
+      "text": "The final response is given to the MCP client."
+    },
+    {
+      "start": 1522.52,
+      "end": 1525.2,
+      "text": "The client then forwards it back to the user,"
+    },
+    {
+      "start": 1525.2,
+      "end": 1528.1599999999999,
+      "text": "result in customer satisfaction."
+    },
+    {
+      "start": 1528.1599999999999,
+      "end": 1531.8,
+      "text": "You see that the user is no longer just able to get data."
+    },
+    {
+      "start": 1531.8,
+      "end": 1533.6799999999998,
+      "text": "They don't have to do things themselves"
+    },
+    {
+      "start": 1533.6799999999998,
+      "end": 1535.24,
+      "text": "after being given a recipe."
+    },
+    {
+      "start": 1535.24,
+      "end": 1540.92,
+      "text": "The recipe can be completely executed by the MCP client."
+    },
+    {
+      "start": 1540.92,
+      "end": 1543.76,
+      "text": "So this makes LMs a lot more powerful."
+    },
+    {
+      "start": 1543.76,
+      "end": 1547.16,
+      "text": "MCP has picked up a lot of popularity now."
+    },
+    {
+      "start": 1547.16,
+      "end": 1551.52,
+      "text": "So all of this put together is called context engineering."
+    },
+    {
+      "start": 1554.32,
+      "end": 1557.3600000000001,
+      "text": "If you're an AI engineer, you have probably heard of this term."
+    },
+    {
+      "start": 1557.3600000000001,
+      "end": 1560.4,
+      "text": "And basically, this is an encapsulation"
+    },
+    {
+      "start": 1560.4,
+      "end": 1562.6399999999999,
+      "text": "of many of the things that we have already discussed."
+    },
+    {
+      "start": 1562.6399999999999,
+      "end": 1566.72,
+      "text": "We discussed few short prompting, which is giving examples."
+    },
+    {
+      "start": 1570.48,
+      "end": 1574.44,
+      "text": "We discussed retrieval augmented generation,"
+    },
+    {
+      "start": 1574.44,
+      "end": 1580.08,
+      "text": "which is getting relevant documents from a vector database,"
+    },
+    {
+      "start": 1580.08,
+      "end": 1583.52,
+      "text": "and using them to add context to a query,"
+    },
+    {
+      "start": 1583.52,
+      "end": 1590.52,
+      "text": "and using model context protocol to hit external servers"
+    },
+    {
+      "start": 1590.52,
+      "end": 1594.44,
+      "text": "and perform actions as needed."
+    },
+    {
+      "start": 1594.44,
+      "end": 1595.96,
+      "text": "When it comes to context engineering,"
+    },
+    {
+      "start": 1595.96,
+      "end": 1599.72,
+      "text": "there's two new challenges that we are facing as AI engineers."
+    },
+    {
+      "start": 1599.72,
+      "end": 1602.72,
+      "text": "One is user preferences."
+    },
+    {
+      "start": 1602.72,
+      "end": 1605.4,
+      "text": "And the second is prompt summarization."
+    },
+    {
+      "start": 1612.24,
+      "end": 1613.76,
+      "text": "We can call it context summarization."
+    },
+    {
+      "start": 1614.48,
+      "end": 1631.04,
+      "text": "For example, you might use a sliding window, where the last 100 chats are sent directly to the large language model."
+    },
+    {
+      "start": 1631.04,
+      "end": 1634.8,
+      "text": "And all the previous chats are summarized into five sentences."
+    },
+    {
+      "start": 1639.52,
+      "end": 1642.88,
+      "text": "This limits the maximum amount of chats that you're sending to the large language model."
+    },
+    {
+      "start": 1643.88,
+      "end": 1645.3600000000001,
+      "text": "You could use other techniques also."
+    },
+    {
+      "start": 1645.3600000000001,
+      "end": 1648.3600000000001,
+      "text": "For example, some people just focus on keywords."
+    },
+    {
+      "start": 1648.3600000000001,
+      "end": 1650.96,
+      "text": "Some people focus just on the last chat."
+    },
+    {
+      "start": 1650.96,
+      "end": 1655.76,
+      "text": "So one chat and the previous entire chat history summary together."
+    },
+    {
+      "start": 1655.76,
+      "end": 1659.32,
+      "text": "The idea is to get context summarization this way."
+    },
+    {
+      "start": 1659.32,
+      "end": 1662.6,
+      "text": "When you get a document, you again summarize it first and then send it."
+    },
+    {
+      "start": 1662.6,
+      "end": 1667.12,
+      "text": "So this can be done maybe using a cheap small language model or a distilled model."
+    },
+    {
+      "start": 1668.12,
+      "end": 1673.12,
+      "text": "And once you have generated the context, you send that to the expensive large language model."
+    },
+    {
+      "start": 1673.12,
+      "end": 1680.12,
+      "text": "You see the main difference between context engineering and prompt engineering is prompt engineering is for one single prompt."
+    },
+    {
+      "start": 1680.12,
+      "end": 1682.12,
+      "text": "It is stateless."
+    },
+    {
+      "start": 1682.12,
+      "end": 1686.12,
+      "text": "Anytime you ask the large language model to behave in a particular way, the system prompt is going to be the same."
+    },
+    {
+      "start": 1686.12,
+      "end": 1693.12,
+      "text": "But context engineering evolves as per the user's declared preferences and also the previous chat history."
+    },
+    {
+      "start": 1694.12,
+      "end": 1702.12,
+      "text": "Similar to what it was earlier, but this is more long term, which brings us to the most long term thing you can come up with in the AI space right now."
+    },
+    {
+      "start": 1702.12,
+      "end": 1703.12,
+      "text": "Agents."
+    },
+    {
+      "start": 1706.12,
+      "end": 1708.12,
+      "text": "I've taken a detailed video on this, so do check that out."
+    },
+    {
+      "start": 1708.12,
+      "end": 1717.12,
+      "text": "But at a high level, you have a long running process, which is known as an agent."
+    },
+    {
+      "start": 1717.12,
+      "end": 1720.12,
+      "text": "You can think of this as a server, which is getting an API call."
+    },
+    {
+      "start": 1720.12,
+      "end": 1721.12,
+      "text": "And this has many capabilities."
+    },
+    {
+      "start": 1721.12,
+      "end": 1725.12,
+      "text": "It can go and query an LLM."
+    },
+    {
+      "start": 1725.12,
+      "end": 1738.12,
+      "text": "It can also query external systems and other agents to meet the user's requirements."
+    },
+    {
+      "start": 1738.12,
+      "end": 1740.12,
+      "text": "Let's take an example here."
+    },
+    {
+      "start": 1740.12,
+      "end": 1749.12,
+      "text": "Let's say your travel agent can look into booking flights, booking hotels and even manage your email when you're away."
+    },
+    {
+      "start": 1749.12,
+      "end": 1753.12,
+      "text": "When it sees a window of opportunity, maybe the flights then are cheap."
+    },
+    {
+      "start": 1753.12,
+      "end": 1756.12,
+      "text": "It goes ahead and makes the booking according to your preferences."
+    },
+    {
+      "start": 1756.12,
+      "end": 1759.12,
+      "text": "All of this stuff can be managed by an agent."
+    },
+    {
+      "start": 1759.12,
+      "end": 1767.12,
+      "text": "And the most hyped term here is reinforcement learning."
+    },
+    {
+      "start": 1767.12,
+      "end": 1771.12,
+      "text": "It's a way in which you can train models to behave in particular way."
+    },
+    {
+      "start": 1771.12,
+      "end": 1779.12,
+      "text": "So for example, if you give a query, a user query to the model, the model can generate two responses."
+    },
+    {
+      "start": 1779.12,
+      "end": 1783.12,
+      "text": "Response one and response two."
+    },
+    {
+      "start": 1783.12,
+      "end": 1785.12,
+      "text": "You must have seen this in chat GPT."
+    },
+    {
+      "start": 1785.12,
+      "end": 1787.12,
+      "text": "Choose the one which is better."
+    },
+    {
+      "start": 1787.12,
+      "end": 1790.12,
+      "text": "So the one which is chosen gets a plus one."
+    },
+    {
+      "start": 1790.12,
+      "end": 1792.12,
+      "text": "The other one gets a minus one."
+    },
+    {
+      "start": 1792.12,
+      "end": 1796.12,
+      "text": "What happened effectively is you took a user query."
+    },
+    {
+      "start": 1796.12,
+      "end": 1800.12,
+      "text": "This entire thing can be mapped to a vector."
+    },
+    {
+      "start": 1800.0,
+      "end": 1803.44,
+      "text": "and the vector is an n dimensional space, right?"
+    },
+    {
+      "start": 1803.44,
+      "end": 1808.56,
+      "text": "So you go to that coordinate and you tell the model that look after reaching here,"
+    },
+    {
+      "start": 1808.56,
+      "end": 1812.32,
+      "text": "you generated further tokens for the vectors."
+    },
+    {
+      "start": 1812.32,
+      "end": 1813.32,
+      "text": "So that's your path."
+    },
+    {
+      "start": 1813.32,
+      "end": 1815.32,
+      "text": "You went from here to here to here."
+    },
+    {
+      "start": 1815.32,
+      "end": 1818.52,
+      "text": "So this was the final point of response."
+    },
+    {
+      "start": 1818.52,
+      "end": 1821.68,
+      "text": "And now you got a score of plus one."
+    },
+    {
+      "start": 1821.68,
+      "end": 1823.8,
+      "text": "So this gets a score of plus one."
+    },
+    {
+      "start": 1823.8,
+      "end": 1828.16,
+      "text": "This also gets a score of plus one, plus one, plus one, plus one, plus one."
+    },
+    {
+      "start": 1828.6,
+      "end": 1832.04,
+      "text": "There's also discounting that you can do, but for now let's just keep things simple."
+    },
+    {
+      "start": 1832.04,
+      "end": 1833.28,
+      "text": "This is a nice path."
+    },
+    {
+      "start": 1833.28,
+      "end": 1834.84,
+      "text": "You always want to follow this path."
+    },
+    {
+      "start": 1836.92,
+      "end": 1839.0,
+      "text": "Response two was bad."
+    },
+    {
+      "start": 1839.0,
+      "end": 1845.32,
+      "text": "There, you followed this point to this point, this point, and then you deviated."
+    },
+    {
+      "start": 1845.32,
+      "end": 1848.6,
+      "text": "The next token that you generated after the first three tokens, let's say,"
+    },
+    {
+      "start": 1849.84,
+      "end": 1851.8,
+      "text": "is not gold."
+    },
+    {
+      "start": 1853.0,
+      "end": 1855.16,
+      "text": "And then you did a comma here and went,"
+    },
+    {
+      "start": 1856.12,
+      "end": 1859.08,
+      "text": "but it may be."
+    },
+    {
+      "start": 1859.08,
+      "end": 1868.4,
+      "text": "So token one, two, three, four, token one, two, three, four."
+    },
+    {
+      "start": 1868.96,
+      "end": 1870.72,
+      "text": "OK, this was bad."
+    },
+    {
+      "start": 1870.72,
+      "end": 1875.8,
+      "text": "It got a score of minus one, which means this area gets a score of minus one."
+    },
+    {
+      "start": 1875.8,
+      "end": 1880.96,
+      "text": "This also gets a score of minus one, minus one, minus one, minus one, plus one."
+    },
+    {
+      "start": 1881.92,
+      "end": 1886.56,
+      "text": "Takes it to zero, minus one, plus one takes it to zero, minus one, plus one takes it to zero."
+    },
+    {
+      "start": 1888.2,
+      "end": 1894.48,
+      "text": "So what you're doing is you have a space where you have negative scores, positive scores and"
+    },
+    {
+      "start": 1894.48,
+      "end": 1896.4,
+      "text": "neutral scores."
+    },
+    {
+      "start": 1896.4,
+      "end": 1902.96,
+      "text": "If you do this enough, then you'll end up with a space, a vector space, where given an input"
+    },
+    {
+      "start": 1902.96,
+      "end": 1908.32,
+      "text": "query, given a starting point, you'll have a space of negative where you don't want to go."
+    },
+    {
+      "start": 1908.88,
+      "end": 1912.2,
+      "text": "You'll have a space of positive where you definitely want to go."
+    },
+    {
+      "start": 1912.2,
+      "end": 1914.76,
+      "text": "And the more positive it is, the more you want to go there."
+    },
+    {
+      "start": 1914.76,
+      "end": 1916.88,
+      "text": "OK, so maybe you go here."
+    },
+    {
+      "start": 1916.88,
+      "end": 1920.2,
+      "text": "From here, you have another very positive space, which is over here."
+    },
+    {
+      "start": 1920.2,
+      "end": 1921.6399999999999,
+      "text": "This is like hill climbing, right?"
+    },
+    {
+      "start": 1921.6399999999999,
+      "end": 1927.44,
+      "text": "You're basically trying to optimize on the path that you're taking as a large language model."
+    },
+    {
+      "start": 1928.56,
+      "end": 1932.04,
+      "text": "The expectation is that the final result will make the end user happy."
+    },
+    {
+      "start": 1933.48,
+      "end": 1938.28,
+      "text": "OK, if the end user experience is good, then the model is trained to make it"
+    },
+    {
+      "start": 1938.28,
+      "end": 1939.28,
+      "text": "users happy."
+    },
+    {
+      "start": 1940.16,
+      "end": 1944.12,
+      "text": "That's what is reinforcement learning with human feedback."
+    },
+    {
+      "start": 1944.12,
+      "end": 1946.92,
+      "text": "Human feedback is telling you whether it is a plus one or minus one."
+    },
+    {
+      "start": 1948.24,
+      "end": 1952.28,
+      "text": "And the feedback is helping you reinforce good outputs."
+    },
+    {
+      "start": 1953.44,
+      "end": 1955.12,
+      "text": "This is an extremely powerful technique."
+    },
+    {
+      "start": 1955.12,
+      "end": 1957.3600000000001,
+      "text": "In fact, it is seen in nature."
+    },
+    {
+      "start": 1957.3600000000001,
+      "end": 1963.04,
+      "text": "If you know about Pavlov's dog, then there was this situation where Pavlov would press"
+    },
+    {
+      "start": 1963.04,
+      "end": 1967.44,
+      "text": "a bell and give food to the dog when it would come after pressing the bell."
+    },
+    {
+      "start": 1967.96,
+      "end": 1971.68,
+      "text": "Eventually, he realized that if he just presses the bell without giving food,"
+    },
+    {
+      "start": 1971.68,
+      "end": 1975.0,
+      "text": "the dog already comes and starts salivating because it's expecting food."
+    },
+    {
+      "start": 1975.36,
+      "end": 1977.56,
+      "text": "So its behaviors have been reinforced."
+    },
+    {
+      "start": 1978.44,
+      "end": 1981.32,
+      "text": "Fortunately, this is not the only capability that human beings have."
+    },
+    {
+      "start": 1981.32,
+      "end": 1984.16,
+      "text": "You cannot model human intelligence using just reinforcement learning."
+    },
+    {
+      "start": 1984.72,
+      "end": 1985.6,
+      "text": "I'll take an example."
+    },
+    {
+      "start": 1985.6,
+      "end": 1991.56,
+      "text": "Let's say you have a coin, which is giving you heads, heads, heads, heads, heads, heads."
+    },
+    {
+      "start": 1992.44,
+      "end": 1996.28,
+      "text": "If you know that this is a fair coin, if you have a mental understanding"
+    },
+    {
+      "start": 1996.28,
+      "end": 1999.32,
+      "text": "of how the coin works, then what do you think is coming next?"
+    },
+    {
+      "start": 2000.0,
+      "end": 2000.72,
+      "text": "Heads or tails?"
+    },
+    {
+      "start": 2002.0,
+      "end": 2003.52,
+      "text": "Okay. With what probability?"
+    },
+    {
+      "start": 2005.72,
+      "end": 2010.2,
+      "text": "Okay. So I just looked at the camera and said, okay, okay, twice."
+    },
+    {
+      "start": 2010.56,
+      "end": 2011.3600000000001,
+      "text": "Something's going on."
+    },
+    {
+      "start": 2012.68,
+      "end": 2016.72,
+      "text": "But as a human being, you should look at this and say, if it is a fair coin,"
+    },
+    {
+      "start": 2016.72,
+      "end": 2021.32,
+      "text": "if it's an unbiased coin, then it can be heads or tails."
+    },
+    {
+      "start": 2022.16,
+      "end": 2024.68,
+      "text": "You can't guarantee that it is going to be heads next."
+    },
+    {
+      "start": 2025.28,
+      "end": 2030.0,
+      "text": "But reinforcement learning looks, it observes the real world and based on that"
+    },
+    {
+      "start": 2030.0,
+      "end": 2035.52,
+      "text": "makes a decision. So when it predicts heads, it gets reinforced, great job."
+    },
+    {
+      "start": 2035.8,
+      "end": 2038.68,
+      "text": "When it predicts tails, it gets punished, bad job."
+    },
+    {
+      "start": 2039.96,
+      "end": 2042.52,
+      "text": "But the reality is this is a fair coin."
+    },
+    {
+      "start": 2042.52,
+      "end": 2045.44,
+      "text": "So there's a 50-50 chance of either."
+    },
+    {
+      "start": 2046.28,
+      "end": 2049.32,
+      "text": "If you ask a human being, you show them the coin, you tell them that this is a fair"
+    },
+    {
+      "start": 2049.32,
+      "end": 2052.16,
+      "text": "coin and then you just keep flipping the coin, you get a lot of heads."
+    },
+    {
+      "start": 2052.16,
+      "end": 2055.6,
+      "text": "They're just going to say 50-50 because they have an internal representation"
+    },
+    {
+      "start": 2055.6,
+      "end": 2057.0,
+      "text": "of how the coin works."
+    },
+    {
+      "start": 2057.04,
+      "end": 2059.72,
+      "text": "They have a mental model of the physics of the coin."
+    },
+    {
+      "start": 2060.48,
+      "end": 2064.36,
+      "text": "While reinforcement learning cannot build mental models, they can just tell you"
+    },
+    {
+      "start": 2064.44,
+      "end": 2068.32,
+      "text": "based on outcomes, what is more likely and what is maybe a more beneficial path."
+    },
+    {
+      "start": 2069.16,
+      "end": 2070.48,
+      "text": "Okay. We are not crocodiles."
+    },
+    {
+      "start": 2070.48,
+      "end": 2071.32,
+      "text": "We are humans."
+    },
+    {
+      "start": 2071.44,
+      "end": 2073.76,
+      "text": "We have a deeper understanding of how things work."
+    },
+    {
+      "start": 2074.56,
+      "end": 2076.92,
+      "text": "Having said that, reinforcement learning is a powerful technique."
+    },
+    {
+      "start": 2076.96,
+      "end": 2081.8,
+      "text": "It does make models get smarter, quite smart, right?"
+    },
+    {
+      "start": 2083.16,
+      "end": 2086.12,
+      "text": "Chain of thought."
+    },
+    {
+      "start": 2087.8,
+      "end": 2089.52,
+      "text": "Pretty simple concept, but very powerful."
+    },
+    {
+      "start": 2089.84,
+      "end": 2092.7200000000003,
+      "text": "When training the model, we'll clearly explain our thought process here."
+    },
+    {
+      "start": 2093.44,
+      "end": 2098.56,
+      "text": "The expectation is that as the model trains to break a problem step by step,"
+    },
+    {
+      "start": 2098.96,
+      "end": 2103.32,
+      "text": "it's going to look at newer problems with different parameters and still be able to"
+    },
+    {
+      "start": 2103.32,
+      "end": 2107.16,
+      "text": "reason through them because it has been trained to reason step by step."
+    },
+    {
+      "start": 2107.4,
+      "end": 2111.8,
+      "text": "This is called chain of thought, where the model goes through a series of"
+    },
+    {
+      "start": 2111.8,
+      "end": 2115.56,
+      "text": "deductions or inferences and comes up with the final response."
+    },
+    {
+      "start": 2115.8,
+      "end": 2121.16,
+      "text": "The quality of this response is usually much higher than a direct response."
+    },
+    {
+      "start": 2122.68,
+      "end": 2125.0,
+      "text": "You can see this is similar to few short prompting."
+    },
+    {
+      "start": 2125.0,
+      "end": 2126.32,
+      "text": "The quality of the response is higher."
+    },
+    {
+      "start": 2126.76,
+      "end": 2130.88,
+      "text": "It has some examples to go through, but here the key difference is that there's"
+    },
+    {
+      "start": 2130.88,
+      "end": 2136.28,
+      "text": "a step by step breakdown and new steps can be added by the model as it seems"
+    },
+    {
+      "start": 2137.2799999999997,
+      "end": 2140.04,
+      "text": "fit because it is trained on so much training data."
+    },
+    {
+      "start": 2140.32,
+      "end": 2144.0,
+      "text": "It may be able to reason through, add more steps as the problem gets more and"
+    },
+    {
+      "start": 2144.0,
+      "end": 2148.52,
+      "text": "more difficult. In fact, this is something that has been seen by deep seek."
+    },
+    {
+      "start": 2148.6,
+      "end": 2151.2,
+      "text": "If you make the problem harder, it goes for more steps."
+    },
+    {
+      "start": 2151.2,
+      "end": 2154.96,
+      "text": "If you make the problem easy, then it goes for fewer steps."
+    },
+    {
+      "start": 2155.84,
+      "end": 2158.24,
+      "text": "So this is called a reasoning model."
+    },
+    {
+      "start": 2163.56,
+      "end": 2165.6,
+      "text": "They don't necessarily need to do chain of thought."
+    },
+    {
+      "start": 2165.6,
+      "end": 2167.36,
+      "text": "They can also use other algorithms."
+    },
+    {
+      "start": 2167.36,
+      "end": 2170.6,
+      "text": "For example, there is tree of thought, graph of thought also that you can go"
+    },
+    {
+      "start": 2170.6,
+      "end": 2175.28,
+      "text": "through. You can use tools also to come up with better reasoning, but a model"
+    },
+    {
+      "start": 2175.28,
+      "end": 2180.2,
+      "text": "that can reason, a model that can figure out, given a problem, how to solve that"
+    },
+    {
+      "start": 2180.2,
+      "end": 2182.52,
+      "text": "problem step by step is a reasoning model."
+    },
+    {
+      "start": 2184.08,
+      "end": 2186.28,
+      "text": "These are also known as LRMs."
+    },
+    {
+      "start": 2187.44,
+      "end": 2192.12,
+      "text": "Examples of this deep seek and open AI."
+    },
+    {
+      "start": 2192.68,
+      "end": 2196.0,
+      "text": "I mean the O1 and O3 and other O series models."
+    },
+    {
+      "start": 2196.84,
+      "end": 2200.2,
+      "text": "But they're newer models with new capabilities now."
+    },
+    {
+      "start": 2201.68,
+      "end": 2205.04,
+      "text": "Multimodel models."
+    },
+    {
+      "start": 2205.68,
+      "end": 2210.32,
+      "text": "Okay. So the basic idea is that most large language models that we know of operate"
+    },
+    {
+      "start": 2210.32,
+      "end": 2217.84,
+      "text": "on text, but what about models which can accept and create images, generate images?"
+    },
+    {
+      "start": 2218.2,
+      "end": 2222.84,
+      "text": "What about models which can accept and create videos?"
+    },
+    {
+      "start": 2222.84,
+      "end": 2224.84,
+      "text": "Okay. So they can analyze images."
+    },
+    {
+      "start": 2224.84,
+      "end": 2229.16,
+      "text": "They can tell you the number of apples in an image, let's say, or they can modify"
+    },
+    {
+      "start": 2229.16,
+      "end": 2231.24,
+      "text": "an image to create a new image."
+    },
+    {
+      "start": 2231.24,
+      "end": 2236.16,
+      "text": "Similarly for video, these have tremendous application similar to how large"
+    },
+    {
+      "start": 2236.16,
+      "end": 2242.36,
+      "text": "language models have changed the marketing space through texture content."
+    },
+    {
+      "start": 2243.36,
+      "end": 2244.56,
+      "text": "Through texture content."
+    },
+    {
+      "start": 2244.56,
+      "end": 2248.96,
+      "text": "Now social media is rife with large language model content."
+    },
+    {
+      "start": 2248.96,
+      "end": 2253.8,
+      "text": "Images are going to get better and better and video can be a really big deal because"
+    },
+    {
+      "start": 2253.8,
+      "end": 2261.16,
+      "text": "if you have celebrities who can create video, who can create ads through large"
+    },
+    {
+      "start": 2261.16,
+      "end": 2265.36,
+      "text": "language models, then the cost expectation of creating video is going to go down."
+    },
+    {
+      "start": 2266.36,
+      "end": 2269.88,
+      "text": "Okay. This is already happening to some extent, but the quality of the models are"
+    },
+    {
+      "start": 2269.88,
+      "end": 2270.68,
+      "text": "not very good."
+    },
+    {
+      "start": 2270.68,
+      "end": 2276.56,
+      "text": "Multi-modal in general means any kind of mode of input data."
+    },
+    {
+      "start": 2277.48,
+      "end": 2280.96,
+      "text": "It turns out that their performance is better than models which are just trained"
+    },
+    {
+      "start": 2280.96,
+      "end": 2281.68,
+      "text": "on text."
+    },
+    {
+      "start": 2281.68,
+      "end": 2285.48,
+      "text": "Okay. They have a deeper understanding of the meaning of objects."
+    },
+    {
+      "start": 2286.2,
+      "end": 2292.88,
+      "text": "If you train a model on cat and feline and so on, and then if you show it images of cats,"
+    },
+    {
+      "start": 2294.08,
+      "end": 2297.76,
+      "text": "then the performance of the model, the output quality is usually better."
+    },
+    {
+      "start": 2298.16,
+      "end": 2299.24,
+      "text": "Okay. The training is better."
+    },
+    {
+      "start": 2301.68,
+      "end": 2307.48,
+      "text": "Fine. Let's get at three major topics, which is where the AI space is heading."
+    },
+    {
+      "start": 2307.88,
+      "end": 2312.8,
+      "text": "Okay. People are looking for more company specific smaller models, foundation models."
+    },
+    {
+      "start": 2313.4,
+      "end": 2316.6,
+      "text": "The reason for this is companies want more control over what they generate."
+    },
+    {
+      "start": 2316.84,
+      "end": 2318.76,
+      "text": "They also want to keep the data close to themselves."
+    },
+    {
+      "start": 2318.76,
+      "end": 2321.36,
+      "text": "They don't want to expose it to any other third party company."
+    },
+    {
+      "start": 2321.96,
+      "end": 2326.08,
+      "text": "So one of the things which is happening is we are looking at smaller models."
+    },
+    {
+      "start": 2326.2,
+      "end": 2336.32,
+      "text": "Small language models, as you can expect with the words, have fewer parameters than large"
+    },
+    {
+      "start": 2336.32,
+      "end": 2336.96,
+      "text": "language models."
+    },
+    {
+      "start": 2337.2,
+      "end": 2341.24,
+      "text": "For example, a small language model may have 3 million to 300 million parameters."
+    },
+    {
+      "start": 2341.64,
+      "end": 2345.6800000000003,
+      "text": "Okay. The neural network internally has fewer connections, fewer weights."
+    },
+    {
+      "start": 2346.64,
+      "end": 2352.36,
+      "text": "But if you look at large language models contrast it, you have three to 300 billion parameters."
+    },
+    {
+      "start": 2352.76,
+      "end": 2361.04,
+      "text": "Okay. So there's a very large neural network with a lot of weights in a LLM, but a SLM is smaller,"
+    },
+    {
+      "start": 2362.84,
+      "end": 2369.36,
+      "text": "but they're useful because they are trained on lesser data, which can be company specific"
+    },
+    {
+      "start": 2373.6,
+      "end": 2374.8,
+      "text": "or task specific."
+    },
+    {
+      "start": 2376.44,
+      "end": 2381.04,
+      "text": "For example, a bot which is trained on just customer queries, how to manage customer queries,"
+    },
+    {
+      "start": 2381.04,
+      "end": 2384.96,
+      "text": "how to make sales is likely to perform decently well."
+    },
+    {
+      "start": 2385.08,
+      "end": 2389.72,
+      "text": "Okay. It's going to be an expert at sales, but it probably can't tell you a detailed"
+    },
+    {
+      "start": 2389.72,
+      "end": 2393.52,
+      "text": "weather analysis for most companies."
+    },
+    {
+      "start": 2393.56,
+      "end": 2394.3199999999997,
+      "text": "This doesn't matter."
+    },
+    {
+      "start": 2395.6,
+      "end": 2397.48,
+      "text": "In the case of NASA, this is what you need."
+    },
+    {
+      "start": 2397.52,
+      "end": 2398.72,
+      "text": "You're probably not selling anything."
+    },
+    {
+      "start": 2398.76,
+      "end": 2399.24,
+      "text": "Hopefully."
+    },
+    {
+      "start": 2400.0,
+      "end": 2405.32,
+      "text": "Maybe you are who knows, but NASA would be more interested in building a foundation model"
+    },
+    {
+      "start": 2405.32,
+      "end": 2410.92,
+      "text": "which can predict the weather but not bothered about the sales part."
+    },
+    {
+      "start": 2410.92,
+      "end": 2417.08,
+      "text": "So in this way, smaller language models are being trained by companies on their specific"
+    },
+    {
+      "start": 2417.08,
+      "end": 2422.04,
+      "text": "data, on their proprietary data to come up with reasonably good responses for specific"
+    },
+    {
+      "start": 2422.04,
+      "end": 2424.88,
+      "text": "use cases."
+    },
+    {
+      "start": 2424.88,
+      "end": 2433.68,
+      "text": "And the process of building small language models is usually distillation."
+    },
+    {
+      "start": 2433.68,
+      "end": 2440.68,
+      "text": "Basic idea is you have a large language model which is a teacher and then you pass in some"
+    },
+    {
+      "start": 2440.68,
+      "end": 2443.28,
+      "text": "input."
+    },
+    {
+      "start": 2443.28,
+      "end": 2449.44,
+      "text": "You look at the output of the large language model and in parallel you also send it to"
+    },
+    {
+      "start": 2449.44,
+      "end": 2450.76,
+      "text": "a small language model."
+    },
+    {
+      "start": 2451.72,
+      "end": 2458.08,
+      "text": "Okay, with fewer parameters here and it also tries to predict the output."
+    },
+    {
+      "start": 2458.08,
+      "end": 2466.2,
+      "text": "So the teacher produces an output and the student tries to mimic the teacher."
+    },
+    {
+      "start": 2466.2,
+      "end": 2470.48,
+      "text": "If these two outputs match, then the small language model is doing well, no weights need"
+    },
+    {
+      "start": 2470.48,
+      "end": 2475.4,
+      "text": "to change but if it's not doing well then the internal weights of the small language"
+    },
+    {
+      "start": 2475.4,
+      "end": 2477.12,
+      "text": "model are changed."
+    },
+    {
+      "start": 2477.12,
+      "end": 2482.2,
+      "text": "But there is a limited number of weights assigned to this model, 3 to 300 million."
+    },
+    {
+      "start": 2482.2,
+      "end": 2487.24,
+      "text": "What you are basically trying to do is condense this information, the complex neural network"
+    },
+    {
+      "start": 2487.24,
+      "end": 2491.8,
+      "text": "into the most reasonable representation that you can have such that your performance is"
+    },
+    {
+      "start": 2491.8,
+      "end": 2494.72,
+      "text": "okay but the costs are significantly reduced."
+    },
+    {
+      "start": 2494.72,
+      "end": 2499.04,
+      "text": "So during run time, during production inference time, when you get a query, this is going"
+    },
+    {
+      "start": 2499.04,
+      "end": 2504.08,
+      "text": "to be much faster at responding as compared to this large language model."
+    },
+    {
+      "start": 2504.08,
+      "end": 2506.44,
+      "text": "It's also easier to host."
+    },
+    {
+      "start": 2506.44,
+      "end": 2513.6,
+      "text": "Okay, distilled models take us to the last term that you really should know if you are"
+    },
+    {
+      "start": 2513.6,
+      "end": 2519.08,
+      "text": "an AI engineer and that is quantization."
+    },
+    {
+      "start": 2519.08,
+      "end": 2523.8,
+      "text": "Here the idea is that you have neural networks."
+    },
+    {
+      "start": 2523.8,
+      "end": 2531.72,
+      "text": "Each of these weights is basically a number, let's say a 32-bit number."
+    },
+    {
+      "start": 2531.72,
+      "end": 2540.12,
+      "text": "What if you could take these weights and condense that information into 8 bits?"
+    },
+    {
+      "start": 2540.12,
+      "end": 2543.84,
+      "text": "Then 75% of your memory is expected to be saved."
+    },
+    {
+      "start": 2543.84,
+      "end": 2547.6,
+      "text": "It doesn't directly map over here because the weights are usually just done on the"
+    },
+    {
+      "start": 2547.6,
+      "end": 2548.84,
+      "text": "feed forward neural network."
+    },
+    {
+      "start": 2548.84,
+      "end": 2552.8,
+      "text": "You still have the attention mechanism and also the training cost is the same because"
+    },
+    {
+      "start": 2552.8,
+      "end": 2556.68,
+      "text": "initially you come up with a really good model with zero quantization."
+    },
+    {
+      "start": 2556.68,
+      "end": 2559.88,
+      "text": "Once the model is completely trained, that's when you apply quantization."
+    },
+    {
+      "start": 2559.88,
+      "end": 2561.76,
+      "text": "So training cost doesn't reduce."
+    },
+    {
+      "start": 2561.76,
+      "end": 2569.04,
+      "text": "This is mainly to reduce inference cost or during production the cost of running a model."
+    },
+    {
+      "start": 2569.04,
+      "end": 2575.4,
+      "text": "So these are the most important 20 terms that I want to discuss in the AI engineering space."
+    },
+    {
+      "start": 2575.4,
+      "end": 2579.64,
+      "text": "I think knowing these terms will help you effectively communicate with any other AI"
+    },
+    {
+      "start": 2579.64,
+      "end": 2581.92,
+      "text": "engineer or people in the team."
+    },
+    {
+      "start": 2581.92,
+      "end": 2586.0,
+      "text": "I couldn't go into enough detail here because I mean when you're talking about the attention"
+    },
+    {
+      "start": 2586.0,
+      "end": 2591.36,
+      "text": "mechanism or KV caching, you can't do this in a 20-30 minute video."
+    },
+    {
+      "start": 2591.36,
+      "end": 2596.12,
+      "text": "But the things you should know about are these terms and also most of the things that I've"
+    },
+    {
+      "start": 2596.12,
+      "end": 2599.6,
+      "text": "mentioned in the AI engineering course at interview ready."
+    },
+    {
+      "start": 2599.6,
+      "end": 2603.2,
+      "text": "If you know them, then you truly understand how these models work and all of the hype"
+    },
+    {
+      "start": 2603.2,
+      "end": 2607.8,
+      "text": "and nonsense which is going on in this space, they become hype and nonsense to you."
+    },
+    {
+      "start": 2607.8,
+      "end": 2609.76,
+      "text": "You are able to recognize it much better."
+    },
+    {
+      "start": 2609.76,
+      "end": 2610.76,
+      "text": "Thank you for watching."
+    },
+    {
+      "start": 2610.76,
+      "end": 2611.76,
+      "text": "I hope you enjoyed the video."
+    },
+    {
+      "start": 2611.76,
+      "end": 2612.76,
+      "text": "I'll see you next time."
+    },
+    {
+      "start": 2612.76,
+      "end": 2612.78,
+      "text": "Bye-bye."
+    }
+  ],
+  "transcript": "Hi everyone, this is GKCS. In today's video, we will see some of the commonly used terms in the AI space. If you're an engineer who's building applications, then you'll find these terms useful when communicating with people within your team or outside. And I think if you know these terms, then it's also easier to learn the deeper subjects around AI. So by the end of this video, you'll have a list of terms whose definitions you understand quite well. And I'll also be linking some references in the description so that you can dig into them further. Let's start. The first term that you should know about is large language model, also known as LLM. And the definition of this is a neural network that is trained to predict the next term of an input sequence. For example, if I pass in the query all that glitters to a large language model, then it's going to come up with a response of is not gold. At which point the complete response of all that glitters is not gold is returned to the user. What do we mean by training? What do we mean by neural network? As we go through this video, you will be understanding these terms better one by one. Okay, the second term that we are looking at is tokenization. This has to do with processing the input of a large language model. For example, if all that glitters is passed into a large language model, the first thing it's going to do is break this into discrete tokens. Okay, that's the process of tokenization. The first token will be all. Then there's a space character. You have then that after which you have glit and finally ours. You might think, whoa, shouldn't you just break this into space characters and get the job done? The humans don't talk like that. We are after all trying to process natural language. So ours is a common term shimmers, murmurs, flickers. These are terms which have the suffix of ours, which means that the action of glit is being performed by that object. Another example of this is in so eating dancing singing all have the suffix of in and a large language model can look at this token of in and know that the previous action is being performed as long as you have the suffix. Okay, remember the core problem for a large language model is to truly understand human language so that it can speak it really well. Tokenization is an essential part of that whose end result is that the input text is broken into tokens. Which brings us to our third term vectors. Tokens tell you what you should focus on. What is the smallest term that you can derive meaning from? But what meaning has to be derived is represented by vectors. If the large language model can map a two dimensional or an n dimensional space. Such that all the words which are close in meaning are placed close to each other. Then the benefit will be that the meaning of these words will be turned into a coordinate in this n dimensional space. This is called a vector. The coordinate the mapping of a word in a n dimensional space such that nearby words similar meaning words are all clustered together and opposite meaning words are somewhere far away comes through the process of vectorization. The end result of this is that large language models know the inherent meaning of all the words that are in the English vocabulary. And they also know how to break it into small tokens, any input text into tokens. Words which are similar to each other are placed close to each other. Once they know the meaning they can construct sentences effectively. Okay, so now you have large language models which can tokenize input text convert them into vectors. But there is one major challenge which actually changed the entire industry here which made large language models very popular. And that is attention. We just said that all the input tokens for a large language model are converted into vectors. The vectors encapsulate the meaning of those words. But what about the word apple? When you say it's a tasty apple, you mean the fruit, the edible apple. When you say apple's revenue, you probably mean the company. And if you say the apple of my eye, you're probably talking about a young person who you have affection for. So apple has different meanings and the only way to understand the meaning is not by looking at the word itself. Because that spelling is the exact same. But by looking at nearby words which add context to the meaning of apple. The moment I said tasty, you know that it's some sort of food that he's going to talk about. That's how humans derive meaning. And large language models can derive meaning this way now. The way they do this is look at nearby words in a sentence, generate those vectors. So nearby contextual vectors are picked up. And for ambiguous terms, you end up with ambiguous vectors. But you can derive the exact meaning by adding this nearby contextual vector to it. So take the vector of apple, take the vector of revenue. When you add these two vectors, when you perform some sort of an operation, it's not a direct addition. But it's the attention operation. You effectively take the vector of apple and you push it in the direction of the company apple. So Google, Meta, Microsoft are all here. The first operation of vector revenue is going to send it there. If you instead add a vector of tasty to this, if you perform the attention mechanism of these two vectors, then it's going to push the vector of apple to banana, chiku and guava. Okay, so you can tokenize input text. You can derive the inherent meaning of all of those tokens. And for ambiguous tokens for tokens which are difficult to understand, you have a mechanism to add context by looking at nearby words. And this is another breakthrough that large language models have made. This was in 2017. The paper came out then, but in 2022, this became really, really famous with child GPT being released. The quality of responses of a large language model far exceed anything else that we have seen earlier. Okay, because it is able to derive contextual meaning, it's able to construct sentences in a way that humans speak. Okay, so now we know how LNMs can process input. But how do you train the LNM to predict the next token? Okay, here's where there was a major breakthrough in 2017. Basically, the concept of self-supervised learning became very popular. Self-supervised learning means that instead of telling the model exactly what it needs to do, the structure of the input data is such that the model knows what it should do. Okay, for example, you're watching this video right now. I'm going to make a part of this video blank. So one, two, three, four, five. What do you think is being hidden right now? What number is coming to your mind? Let's see if that's right. Yes, most of you guessed one because we went in the sequence five, four, three, two, one. Okay, but when it comes to a video, you can also do something else. Let me make another part of the video blank right now. Where do you think the other eye is looking? Let's check. Most of you got it right. Both eyes are looking upwards. So what's happening is a section of the input can be predicted even if you make that section blank, which means that there is inherent structure in your input, which your mind is able to replace with the expected token or expected output. Now, the standard way to train such a model would be called supervised learning. Where you would have a human being saying that if the input text is all that glitters, then the model should predict is not gold. If the input text is at two, then the output should be brutus. Instead, self supervised learning has made getting test data much cheaper. Here, if you have at two brutus, then the model is going to be fed in this text and it's going to make three predictions. One, what comes after it? 2, what comes after at 2 and 3, what comes after at 2, Brutus. No humans will involve, you had some text in the world, maybe you scraped this off the internet and now you're telling the model, look I have 3 questions for you, tell me what are the right answers. So the model looks at these 3 puzzles, they are all running in parallel and they try to make predictions. At the model might say no, the model might say 2, the model might say something, but you train the model that 2 is the expected response. So if it makes a mistake, then you penalize the model that increases loss and so the neural network weights are updated. In the second task you have at 2, if the model makes the prediction of Brutus, then you tell the model that this is great, the weights don't need to be updated. But if it says Caesar, then the model has to be penalized and so the internal weights are updated. In the third case, if you predict a stop token, at 2 Brutus, that's it, then you'll get it wrong, if it's a comma, you're right and if it's then maybe you're also right. What you're doing is you're looking at text which already exists in the world and you're creating multiple challenges for yourself without human intervention. This is what makes the model self-supervised. It might seem like a small thing, but this architectural decision or this benefit of the large language model makes it really, really scalable. In fact, most AI models now are moving to self-supervised learning. Even image models like we discussed are looking for removing some patches of the image and trying to predict those patches. The benefit of this is you understand the underlying structure and the inherent meaning of those patches. In the case of text, it's going to be terms. In the case of images, they are a bunch of pixels and in the case of video, you might understand how an object even moves. That explains what self-supervised learning is. Next is the transformer. Most people confuse transformer with large language model, which is completely understandable but that's not the case. A large language model is something which predicts the next token given an input sequence. A transformer does the exact same thing, but it's a specific algorithm or a specific method by which you predict the next token. A transformer basically is input tokens being run through an attention block, which is then forwarded to a neural network, a feed-forward neural network and then you have a bunch of outputs. You can think of these as output vectors. These vectors are then passed into another layer of attention. The first layer of attention, like we said, disambiguates terms. The second layer might find more complex relationships. It might find sarcasm. It might find implications. For example, a crane was hunting a crab. In the first case, you understood it's not the metal crane. It's a bird crane. But in the second one, you might infer that the crab is fearful. You might understand the crane is hungry. This is the second layer and then you have another feed-forward neural network and so on. Till finally, you are confident enough to generate an output. You have these stacked. Sometimes they're stacked to 12 layers. Sometimes more. I think recent GPT architectures are in hundreds. The main idea behind this is you're getting all of the meaning from your input tokens and then manipulating them again and again to finally predict what the next word should be. This attention block is order n squared. You could replace this transformer in a large language model with something else. Tomorrow, a new architecture could come in, in which case the transformer and the state space models are gotten rid of, which could be a diffusion model that constructs essays or text. The large language model is actually the product. You can think of it as a car and this is the engine. A car, many people say is just the engine, but no, there are some other fancy things around it. The internal algorithm can be different. Number seven, it's fine tuning. We said that a large language model is something that is trained to predict the next term of an input sequence. The question is what type of next token are we talking about? If you are talking about a medical large language model, something which helps doctors explain the diagnosis of a patient, then you're probably going to be thinking of medical terms. If you have a model which is trained on financial operations, then the same model for the same query is going to think in terms of financial terms. The next token that the model comes up with is not always going to be general. You're first going to train your base model in a self-supervised fashion. Then you're going to take that model and make it go through a series of questions and answers. This process is called fine tuning and goes something like, who is the president of USA? Donald Trump. But the model could also say, I would like to know that too. Here's where things are going wrong. The model should not be responding like this. Give us a direct answer or confess that you don't know or you could say no. But this is also very, very bad because the models are trained to be helpful. So what's happening is other plausible responses which are not wrong but are not desirable are penalized in the fine tuning process. You have these questions and answers. The fine tuning process forces the model to take a question and give answers as expected. So when it comes to a medical diagnosis, the model is going to train itself. The internal weights will be updated in such a way that it will learn to speak in medical jargon or medical terms. And so this step where a base model is trained to answer in a specific way is called fine tuning. The same base model can be run through different sets of questions and answers to come up with multiple fine tuned models. The base model of Lama can be fine tuned by a company to answer their customer specific queries. Few short prompting. So the main idea behind few short prompting is before you send a query to a model, before you send a plain Manila query to a large language model and ask it to come up with a response, you augment the query, you add more information by saying, look, if the query is where is my parcel, then let me tell you that there are some examples that I want you to go through. This is happening during influence time, during response time, in production, right, life. Your system, your server sends the original query and sends examples to the model so that it takes this into context and then gives an appropriate response. The quality of the response goes up. This is called few short prompting. It's basically example prompting, example in prompt. That's it. It brings us to point number nine, which is very interesting and is completely exploded, which is retrieval augmented generation. In fact, the AI space is moving so quickly that people are saying, rag or retrieval augmented generation is already dead. So the basic idea again is that you have a large language model and you pass in the input from the server. So a customer connects to you here. They hit your API. The server says, you know what, this is the customer query. Let's forward that to the large language model. Along with that, let's give some examples. So that's few short prompting. And along with that, since there are some company policies that I want you to know of large language model, I'll give you those documents. So in real time, the server goes, patches the most relevant documents, maybe your policy document, maybe your terms and conditions when placing an order, and maybe many more things. You send these documents along with examples of how you should respond. This gives you a good idea of the format of the response. This gives you a good idea of the company specific context. And this is the direct user input query. With all of this, the large language model tends to give very high quality responses. Now the question is, where are you getting these documents from? How does the server know which documents are related to which query? There are many ways to do this. If you talk to Neo4j, which is a graph database company, they'll tell you you should store things in a graph DB. If you talk to Neon, then they'll tell you that you should store things in a vector DB. And some people will say, just keep everything in there. memory, just keep everything in cache. This doesn't matter. How you fetch the documents doesn't matter so much. Usually it's a vector DB, by the way, because. But I mean, it is easier to find relevant documents because you just do a similarity search. Once you have the documents, you pass that to a large language model. The large language model converts it internally into vectors and then gives you a response. But at a high level, you just want to add more and more context. You retrieve the context, augment the query, and then generate a response. The 10th term, which is vector database. We just mentioned vector database is something which is used to find relevant documents for an incoming query. Let's see how that happens. You have the request, I am upset with your payment system. I expect a refund. There's a lot of terms in this query. A human being can read this and easily understand what the user is feeling. They're feeling upset. I mean, they've clearly mentioned it. But they are looking for a refund. If you give them a refund, maybe the upset feeling will go away. What do you do? Which documents do you search for? You could search for all documents where the word upset exists. But maybe you don't have it in your company policy. Nowhere is it mentioned that a user is upset. But you have a document which mentions if the user is giving you a low rating or if a user drops off. How do you make that decision that upset as a word is close to the low rating or drop off? We spoke about vectors. Vectors can encapsulate semantic meaning, which means documents which store similar words are going to be similar or close in distance. Remember, vectors are basically coordinates. So the distance between upset and documents having low rating are going to be low. You will fetch the documents which mention low rating or drop offs and use them to add context to your large language model. When you have an incoming query from the user, you're going to find which document is closest to the query and add that to the large language model's context. So this document will be sent along with the original user query and maybe a system prompt. Where are you going to store these documents in a vector database, which helps you perform these similarity searches efficiently? Some of these algorithms are hierarchical navigable in a small world. We have spoken about this in detail in the interviewer ID course. At the end of the day, the vector database is like a black box to you. You can store documents and you can quickly retrieve them when you need them. Great. So you can store internal company documents and information in a vector database to get context for a large language model. But what if the context exists outside your system? So this challenge was met with model context protocol. As the name suggests, it's a protocol or a way to communicate to transfer context into a model. The basic idea here, I made a detailed video on this. You can check it out. But the basic idea here is that you have a large language model which, before receiving an incoming query from a user, has a client, an MCP client, model context protocol client, which forwards the initial query, user query. The LM now makes a decision. It says that there may be external tools or databases that I want to connect to. The client gets to know of this and connects with external MCP servers in one case that might be Indigo, in another case that will be Air India, whose MCP server can give you details around Air India. So you can think of this as a wrapper for Air India's database, this as a wrapper for Indigo's database. As a response, you are going to get flight details. From each of these airlines. Once you have the details, you can forward it to the LM saying that, hey, along with the user query and along with whatever system prompt or relevant context that I could get from my vector database, I'm also adding flight details, real time information, from external servers, which you can now consume to come up with a decision. And the large language model at this point might say, OK, book flight number, i.e. Indigo, 1-0-2-0, which then results in another API call to book on the MCP server of Indigo. The final response is given to the MCP client. The client then forwards it back to the user, result in customer satisfaction. You see that the user is no longer just able to get data. They don't have to do things themselves after being given a recipe. The recipe can be completely executed by the MCP client. So this makes LMs a lot more powerful. MCP has picked up a lot of popularity now. So all of this put together is called context engineering. If you're an AI engineer, you have probably heard of this term. And basically, this is an encapsulation of many of the things that we have already discussed. We discussed few short prompting, which is giving examples. We discussed retrieval augmented generation, which is getting relevant documents from a vector database, and using them to add context to a query, and using model context protocol to hit external servers and perform actions as needed. When it comes to context engineering, there's two new challenges that we are facing as AI engineers. One is user preferences. And the second is prompt summarization. We can call it context summarization. For example, you might use a sliding window, where the last 100 chats are sent directly to the large language model. And all the previous chats are summarized into five sentences. This limits the maximum amount of chats that you're sending to the large language model. You could use other techniques also. For example, some people just focus on keywords. Some people focus just on the last chat. So one chat and the previous entire chat history summary together. The idea is to get context summarization this way. When you get a document, you again summarize it first and then send it. So this can be done maybe using a cheap small language model or a distilled model. And once you have generated the context, you send that to the expensive large language model. You see the main difference between context engineering and prompt engineering is prompt engineering is for one single prompt. It is stateless. Anytime you ask the large language model to behave in a particular way, the system prompt is going to be the same. But context engineering evolves as per the user's declared preferences and also the previous chat history. Similar to what it was earlier, but this is more long term, which brings us to the most long term thing you can come up with in the AI space right now. Agents. I've taken a detailed video on this, so do check that out. But at a high level, you have a long running process, which is known as an agent. You can think of this as a server, which is getting an API call. And this has many capabilities. It can go and query an LLM. It can also query external systems and other agents to meet the user's requirements. Let's take an example here. Let's say your travel agent can look into booking flights, booking hotels and even manage your email when you're away. When it sees a window of opportunity, maybe the flights then are cheap. It goes ahead and makes the booking according to your preferences. All of this stuff can be managed by an agent. And the most hyped term here is reinforcement learning. It's a way in which you can train models to behave in particular way. So for example, if you give a query, a user query to the model, the model can generate two responses. Response one and response two. You must have seen this in chat GPT. Choose the one which is better. So the one which is chosen gets a plus one. The other one gets a minus one. What happened effectively is you took a user query. This entire thing can be mapped to a vector. and the vector is an n dimensional space, right? So you go to that coordinate and you tell the model that look after reaching here, you generated further tokens for the vectors. So that's your path. You went from here to here to here. So this was the final point of response. And now you got a score of plus one. So this gets a score of plus one. This also gets a score of plus one, plus one, plus one, plus one, plus one. There's also discounting that you can do, but for now let's just keep things simple. This is a nice path. You always want to follow this path. Response two was bad. There, you followed this point to this point, this point, and then you deviated. The next token that you generated after the first three tokens, let's say, is not gold. And then you did a comma here and went, but it may be. So token one, two, three, four, token one, two, three, four. OK, this was bad. It got a score of minus one, which means this area gets a score of minus one. This also gets a score of minus one, minus one, minus one, minus one, plus one. Takes it to zero, minus one, plus one takes it to zero, minus one, plus one takes it to zero. So what you're doing is you have a space where you have negative scores, positive scores and neutral scores. If you do this enough, then you'll end up with a space, a vector space, where given an input query, given a starting point, you'll have a space of negative where you don't want to go. You'll have a space of positive where you definitely want to go. And the more positive it is, the more you want to go there. OK, so maybe you go here. From here, you have another very positive space, which is over here. This is like hill climbing, right? You're basically trying to optimize on the path that you're taking as a large language model. The expectation is that the final result will make the end user happy. OK, if the end user experience is good, then the model is trained to make it users happy. That's what is reinforcement learning with human feedback. Human feedback is telling you whether it is a plus one or minus one. And the feedback is helping you reinforce good outputs. This is an extremely powerful technique. In fact, it is seen in nature. If you know about Pavlov's dog, then there was this situation where Pavlov would press a bell and give food to the dog when it would come after pressing the bell. Eventually, he realized that if he just presses the bell without giving food, the dog already comes and starts salivating because it's expecting food. So its behaviors have been reinforced. Fortunately, this is not the only capability that human beings have. You cannot model human intelligence using just reinforcement learning. I'll take an example. Let's say you have a coin, which is giving you heads, heads, heads, heads, heads, heads. If you know that this is a fair coin, if you have a mental understanding of how the coin works, then what do you think is coming next? Heads or tails? Okay. With what probability? Okay. So I just looked at the camera and said, okay, okay, twice. Something's going on. But as a human being, you should look at this and say, if it is a fair coin, if it's an unbiased coin, then it can be heads or tails. You can't guarantee that it is going to be heads next. But reinforcement learning looks, it observes the real world and based on that makes a decision. So when it predicts heads, it gets reinforced, great job. When it predicts tails, it gets punished, bad job. But the reality is this is a fair coin. So there's a 50-50 chance of either. If you ask a human being, you show them the coin, you tell them that this is a fair coin and then you just keep flipping the coin, you get a lot of heads. They're just going to say 50-50 because they have an internal representation of how the coin works. They have a mental model of the physics of the coin. While reinforcement learning cannot build mental models, they can just tell you based on outcomes, what is more likely and what is maybe a more beneficial path. Okay. We are not crocodiles. We are humans. We have a deeper understanding of how things work. Having said that, reinforcement learning is a powerful technique. It does make models get smarter, quite smart, right? Chain of thought. Pretty simple concept, but very powerful. When training the model, we'll clearly explain our thought process here. The expectation is that as the model trains to break a problem step by step, it's going to look at newer problems with different parameters and still be able to reason through them because it has been trained to reason step by step. This is called chain of thought, where the model goes through a series of deductions or inferences and comes up with the final response. The quality of this response is usually much higher than a direct response. You can see this is similar to few short prompting. The quality of the response is higher. It has some examples to go through, but here the key difference is that there's a step by step breakdown and new steps can be added by the model as it seems fit because it is trained on so much training data. It may be able to reason through, add more steps as the problem gets more and more difficult. In fact, this is something that has been seen by deep seek. If you make the problem harder, it goes for more steps. If you make the problem easy, then it goes for fewer steps. So this is called a reasoning model. They don't necessarily need to do chain of thought. They can also use other algorithms. For example, there is tree of thought, graph of thought also that you can go through. You can use tools also to come up with better reasoning, but a model that can reason, a model that can figure out, given a problem, how to solve that problem step by step is a reasoning model. These are also known as LRMs. Examples of this deep seek and open AI. I mean the O1 and O3 and other O series models. But they're newer models with new capabilities now. Multimodel models. Okay. So the basic idea is that most large language models that we know of operate on text, but what about models which can accept and create images, generate images? What about models which can accept and create videos? Okay. So they can analyze images. They can tell you the number of apples in an image, let's say, or they can modify an image to create a new image. Similarly for video, these have tremendous application similar to how large language models have changed the marketing space through texture content. Through texture content. Now social media is rife with large language model content. Images are going to get better and better and video can be a really big deal because if you have celebrities who can create video, who can create ads through large language models, then the cost expectation of creating video is going to go down. Okay. This is already happening to some extent, but the quality of the models are not very good. Multi-modal in general means any kind of mode of input data. It turns out that their performance is better than models which are just trained on text. Okay. They have a deeper understanding of the meaning of objects. If you train a model on cat and feline and so on, and then if you show it images of cats, then the performance of the model, the output quality is usually better. Okay. The training is better. Fine. Let's get at three major topics, which is where the AI space is heading. Okay. People are looking for more company specific smaller models, foundation models. The reason for this is companies want more control over what they generate. They also want to keep the data close to themselves. They don't want to expose it to any other third party company. So one of the things which is happening is we are looking at smaller models. Small language models, as you can expect with the words, have fewer parameters than large language models. For example, a small language model may have 3 million to 300 million parameters. Okay. The neural network internally has fewer connections, fewer weights. But if you look at large language models contrast it, you have three to 300 billion parameters. Okay. So there's a very large neural network with a lot of weights in a LLM, but a SLM is smaller, but they're useful because they are trained on lesser data, which can be company specific or task specific. For example, a bot which is trained on just customer queries, how to manage customer queries, how to make sales is likely to perform decently well. Okay. It's going to be an expert at sales, but it probably can't tell you a detailed weather analysis for most companies. This doesn't matter. In the case of NASA, this is what you need. You're probably not selling anything. Hopefully. Maybe you are who knows, but NASA would be more interested in building a foundation model which can predict the weather but not bothered about the sales part. So in this way, smaller language models are being trained by companies on their specific data, on their proprietary data to come up with reasonably good responses for specific use cases. And the process of building small language models is usually distillation. Basic idea is you have a large language model which is a teacher and then you pass in some input. You look at the output of the large language model and in parallel you also send it to a small language model. Okay, with fewer parameters here and it also tries to predict the output. So the teacher produces an output and the student tries to mimic the teacher. If these two outputs match, then the small language model is doing well, no weights need to change but if it's not doing well then the internal weights of the small language model are changed. But there is a limited number of weights assigned to this model, 3 to 300 million. What you are basically trying to do is condense this information, the complex neural network into the most reasonable representation that you can have such that your performance is okay but the costs are significantly reduced. So during run time, during production inference time, when you get a query, this is going to be much faster at responding as compared to this large language model. It's also easier to host. Okay, distilled models take us to the last term that you really should know if you are an AI engineer and that is quantization. Here the idea is that you have neural networks. Each of these weights is basically a number, let's say a 32-bit number. What if you could take these weights and condense that information into 8 bits? Then 75% of your memory is expected to be saved. It doesn't directly map over here because the weights are usually just done on the feed forward neural network. You still have the attention mechanism and also the training cost is the same because initially you come up with a really good model with zero quantization. Once the model is completely trained, that's when you apply quantization. So training cost doesn't reduce. This is mainly to reduce inference cost or during production the cost of running a model. So these are the most important 20 terms that I want to discuss in the AI engineering space. I think knowing these terms will help you effectively communicate with any other AI engineer or people in the team. I couldn't go into enough detail here because I mean when you're talking about the attention mechanism or KV caching, you can't do this in a 20-30 minute video. But the things you should know about are these terms and also most of the things that I've mentioned in the AI engineering course at interview ready. If you know them, then you truly understand how these models work and all of the hype and nonsense which is going on in this space, they become hype and nonsense to you. You are able to recognize it much better. Thank you for watching. I hope you enjoyed the video. I'll see you next time. Bye-bye.",
+  "audio_path": "downloades\\20 AI Concepts Explained in 40 Minutes.wav_chunk_0.wav",
+  "transcription_seconds": 1195.8789372,
+  "source_url": "https://youtu.be/OYvlznJ4IZQ?si=SkNWDLigDGxHYKLm"
+}

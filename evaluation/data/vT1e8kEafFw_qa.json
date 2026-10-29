@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What topics will be covered in this phase of the video?",
+    "answer": "The video will cover what a data engineer is, their work, and discuss data warehouses and data lakes.",
+    "start": 0.0,
+    "end": 25.0
+  },
+  {
+    "question": "How is the role of a data engineer described in terms of responsibility and entry-level friendliness?",
+    "answer": "The role of a data engineer is described as very interesting, critical, and having much responsibility, but \"not as friendly as an entry-level job.\"",
+    "start": 25.0,
+    "end": 50.0
+  },
+  {
+    "question": "What is the primary purpose of data warehouses and data lakes?",
+    "answer": "Both data warehouses and data lakes are used for storing data or deciding where to keep data.",
+    "start": 50.0,
+    "end": 75.0
+  },
+  {
+    "question": "How did data storage practices change regarding transactions and reports in recent years?",
+    "answer": "In the past, everything was kept in one database. Within the last 5-8 years, OLAP and OLTP were categorized separately with specialized databases, whereas before, the same database was used for both.",
+    "start": 75.0,
+    "end": 100.0
+  },
+  {
+    "question": "What problem arises when accounting and customer service are handled simultaneously, as illustrated by the grocery store example?",
+    "answer": "Both tasks become slow; neither the accounting happens on time nor the reports are generated efficiently.",
+    "start": 100.0,
+    "end": 125.0
+  },
+  {
+    "question": "What is the solution to the problem of slow combined operations, and how is a data warehouse defined?",
+    "answer": "The solution is a data warehouse, which is a separate database where only analytics work is done.",
+    "start": 125.0,
+    "end": 150.0
+  },
+  {
+    "question": "What are the \"OG words\" for data engineering mentioned in the video, and what do they stand for?",
+    "answer": "The \"OG words\" for data engineering are ETL, which stands for Extract, Transform, and Load.",
+    "start": 150.0,
+    "end": 175.0
+  },
+  {
+    "question": "According to the speaker, what is the core job of a data engineer in simple terms?",
+    "answer": "The core job of a data engineer is to pick up data from everywhere, clean it, and put it in one place (a data warehouse).",
+    "start": 175.0,
+    "end": 200.0
+  },
+  {
+    "question": "What makes the data engineer's job \"scary\" regarding data distribution?",
+    "answer": "Data is distributed in many places, such as websites (tables, activities, live graphs), stores (inventory, CRM, payment data), and can come from SQL, NoSQL, JSON, CSV, or PDF formats.",
+    "start": 225.0,
+    "end": 250.0
+  },
+  {
+    "question": "What is a significant challenge in data engineering related to handling diverse data types and extraction?",
+    "answer": "Handling an \"insane amount of data types\" and extracting data from them, including evolving OCR techniques for PDFs, is a significant challenge and part of data engineering.",
+    "start": 250.0,
+    "end": 275.0
+  },
+  {
+    "question": "Why is the \"transform\" part of ETL considered a scary job?",
+    "answer": "After data comes from many places, it's still raw. Cleaning it, changing its format, and standardizing it (e.g., converting PDF/JSON/CSV to SQL rows/columns) is a scary job because data analytics people expect data in a specific, query-ready format.",
+    "start": 275.0,
+    "end": 300.0
+  },
+  {
+    "question": "Why is the ETL process so critical that a dedicated engineering role (data engineer) was created for it?",
+    "answer": "The ETL process is critical because of the complexity involved in handling diverse data formats (CSV, PDF, JSON, .txt) and ensuring data consistency and completeness for analytics.",
+    "start": 300.0,
+    "end": 325.0
+  },
+  {
+    "question": "How is a data warehouse characterized, and what tools typically work with it?",
+    "answer": "A data warehouse is like a \"godown\" where organized, structured data (rows and columns) is kept for easy report creation, dashboards, and insights. Tools like Power BI, SQL queries, and Excel work on this data.",
+    "start": 325.0,
+    "end": 350.0
+  },
+  {
+    "question": "What is the main limitation of a data warehouse, and whose needs does it fail to meet?",
+    "answer": "The main limitation is that it mostly keeps structured data (rows and columns). This fails to meet the needs of data scientists, who require more diverse data like text, images, and videos in their original formats for machine learning.",
+    "start": 350.0,
+    "end": 375.0
+  },
+  {
+    "question": "What new concept was introduced to address the limitations of data warehouses, and what principle is associated with it?",
+    "answer": "The new concept is a data lake, a centralized repository where structured and unstructured data, images, and videos can be kept. It's associated with the \"sushi principle\" that raw data is better.",
+    "start": 375.0,
+    "end": 400.0
+  }
+]

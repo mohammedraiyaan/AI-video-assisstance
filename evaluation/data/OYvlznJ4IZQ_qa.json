@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is the main purpose of this video for engineers?",
+    "answer": "The video aims to explain commonly used terms in the AI space that are useful for engineers building applications, helping them communicate within and outside their teams, and making it easier to learn deeper AI subjects.",
+    "start": 2.0,
+    "end": 18.3
+  },
+  {
+    "question": "What is the definition of a Large Language Model (LLM)?",
+    "answer": "A Large Language Model (LLM) is a neural network that is trained to predict the next term of an input sequence.",
+    "start": 38.3,
+    "end": 54.0
+  },
+  {
+    "question": "How does tokenization process input for a large language model?",
+    "answer": "Tokenization breaks the input text into discrete tokens. For example, 'all that glitters' would be broken into tokens like 'all', 'that', 'glit', and 'ters'.",
+    "start": 92.5,
+    "end": 115.6
+  },
+  {
+    "question": "What is the core problem that tokenization helps a large language model solve?",
+    "answer": "Tokenization is an essential part of helping a large language model truly understand human language so that it can speak it really well.",
+    "start": 156.8,
+    "end": 163.6
+  },
+  {
+    "question": "What do vectors represent in the context of large language models?",
+    "answer": "Vectors represent the meaning derived from tokens. They map words into an n-dimensional space such that words with similar meanings are placed close to each other.",
+    "start": 186.6,
+    "end": 216.3
+  },
+  {
+    "question": "How does the attention mechanism help large language models understand ambiguous terms like 'apple'?",
+    "answer": "The attention mechanism helps by looking at nearby words in a sentence to add context. For example, 'tasty apple' implies the fruit, while 'apple's revenue' implies the company, pushing the 'apple' vector in the appropriate direction.",
+    "start": 308.2,
+    "end": 405.3
+  },
+  {
+    "question": "What is self-supervised learning?",
+    "answer": "Self-supervised learning means that instead of explicitly telling the model what to do, the structure of the input data itself guides the model on what it should do.",
+    "start": 471.8,
+    "end": 483.4
+  },
+  {
+    "question": "What is a key benefit of self-supervised learning for training models?",
+    "answer": "Self-supervised learning has made getting test data much cheaper by allowing models to create multiple challenges for themselves from existing text without human intervention.",
+    "start": 579.6,
+    "end": 620.0
+  },
+  {
+    "question": "What problem does the Model Context Protocol (MCP) address?",
+    "answer": "The Model Context Protocol (MCP) addresses the challenge of providing context to a large language model when that context exists outside the system, acting as a way to communicate and transfer external context into the model.",
+    "start": 1392.9,
+    "end": 1414.2
+  },
+  {
+    "question": "How does an MCP client facilitate interaction between an LLM and external services?",
+    "answer": "An MCP client forwards a user query to the LLM, which decides if external tools are needed. The client then connects with external MCP servers (e.g., for airlines) to retrieve real-time information, which is added to the user query and other context for the LLM to consume.",
+    "start": 1420.6,
+    "end": 1503.0
+  },
+  {
+    "question": "What is context engineering?",
+    "answer": "Context engineering is an encapsulation of techniques like few-shot prompting, retrieval augmented generation (RAG), and model context protocol (MCP) used to add context to a query and perform actions as needed.",
+    "start": 1554.3,
+    "end": 1594.4
+  },
+  {
+    "question": "What are some techniques used for context summarization in context engineering?",
+    "answer": "Techniques for context summarization include using a sliding window (e.g., sending the last 100 chats directly and summarizing previous ones), focusing on keywords, or combining the last chat with a summary of the entire previous chat history.",
+    "start": 1614.5,
+    "end": 1659.3
+  },
+  {
+    "question": "What is an 'agent' in the AI space?",
+    "answer": "An agent is a long-running process, similar to a server, that possesses capabilities to query an LLM, external systems, and other agents to fulfill a user's requirements.",
+    "start": 1708.1,
+    "end": 1738.1
+  },
+  {
+    "question": "How does Reinforcement Learning with Human Feedback (RLHF) work to train models?",
+    "answer": "In RLHF, a model generates multiple responses to a user query, and human feedback (e.g., choosing a better response) assigns positive or negative scores. This feedback reinforces good outputs, guiding the model's path in a vector space to optimize for user satisfaction.",
+    "start": 1771.1,
+    "end": 1955.1
+  },
+  {
+    "question": "What is a limitation of reinforcement learning in modeling human intelligence, as illustrated by the coin flip example?",
+    "answer": "Reinforcement learning observes the real world and makes decisions based on that, getting reinforced for correct predictions. However, it struggles with inherent understanding; for a fair coin, humans know there's a 50-50 chance regardless of past flips, while RL might be biased by observed sequences.",
+    "start": 1981.3,
+    "end": 2057.0
+  }
+]

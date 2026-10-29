@@ -1,0 +1,21 @@
+videos:
+  - id: english-lecture
+    name: English lecture
+    url: "https://youtu.be/615-yWyS1n0?si=nCAGO5aDM8hdHgSZ"
+    language: auto
+    reference_summary: ""
+  - id: hindi-hinglish-talk
+    name: Hindi or Hinglish talk
+    url: "https://youtu.be/vT1e8kEafFw?si=y-A3KdOyEm9uy_GR"
+    language: auto
+    reference_summary: ""
+  - id: short-video
+    name: Short video under five minutes
+    url: "https://youtu.be/jmmW0F0biz0?si=wtmxnmorO8qBUCct"
+    language: auto
+    reference_summary: ""
+  - id: long-or-noisy-video
+    name: Long video over 40 minutes or noisy audio
+    url: "https://youtu.be/OYvlznJ4IZQ?si=SkNWDLigDGxHYKLm"
+    language: auto
+    reference_summary: ""
